@@ -12,7 +12,7 @@ export const ResumeComp = () => {
         py: "50px",
       }}
     >
-      <Header icon={<Resume />} title="resume" />
+      <Header icon={<Resume />} title="Resume" />
       <Box
         sx={{
           display: "flex",
@@ -30,7 +30,7 @@ export const ResumeComp = () => {
           }}
         >
         <Image
-          src={"/resume/resume.png"}
+          src={"/resume/img.png"}
           // width={600}
           // height={300}
           fill
@@ -38,11 +38,11 @@ export const ResumeComp = () => {
           style={{
             objectFit: "contain",
             border: "1px solid #D9D9D9",
-            borderRadius: "4px",
+            borderRadius: "10px",
             overflow: "hidden",
             cursor: "pointer"
           }}
-          onClick={() => window.open("/Ajinkya_3_Yr_MERN_DevOPS_Cloud.pdf", "_blank")}
+          onClick={() => window.open("/resume/Resume.pdf", "_blank")}
         />
         </Box>
         <Box
@@ -64,19 +64,21 @@ export const ResumeComp = () => {
           <Box>
           <Button
             sx={{
-              backgroundColor: "black",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
               textTransform: "capitalize",
               px: "30px",
               py: "12px",
               ":hover": {
-                backgroundColor: "black",
+                backgroundColor: "gray",
+                color:"white  "
               }
             }}
-            onClick={() => window.open("/Ajinkya_3_Yr_MERN_DevOPS_Cloud.pdf", "_blank")}
+            onClick={() => window.open("/resume/Resume.pdf", "_blank")}
           >
             Download Resume
           </Button>
+          
           </Box>
         </Box>
       </Box>
