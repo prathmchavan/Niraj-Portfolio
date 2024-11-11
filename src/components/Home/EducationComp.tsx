@@ -29,11 +29,11 @@ export const EducationComp = () => {
         }}
       >
         <TimeLineItem
-          company="SSBT's C.O.E.T."
-          location={"Jalgaon, Maharashtra"}
-          period={"2021 - 2025"}
+          company="Savitribai Phule Pune University"
+          location={"Pune, Maharashtra"}
+          period={"2018 - 2022"}
           position={"B.E. in Computer Engineering"}
-          logo={"/edu/ssbt.png"}
+          logo={"/edu/sppu2.jpeg"}
         />
 
         <TimeLineItem
@@ -44,13 +44,13 @@ export const EducationComp = () => {
           logo={"/edu/mj.png"}
         />
 
-        <TimeLineItem
+        {/* <TimeLineItem
           company="New English Medium School"
           location="Jalgaon, Maharashtra"
           period={"2008 - 2019"}
           position="Primary & Secondary Schooling"
           logo={"/edu/school.png"}
-        />
+        /> */}
       </Timeline>
     </Box>
   );

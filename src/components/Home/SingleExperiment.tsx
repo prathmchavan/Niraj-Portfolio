@@ -55,6 +55,7 @@ export const SingleExperiment = ({
           display: "flex",
           flexDirection: "column",
           gap: "6px",
+          px:'10px'
         }}
       >
         <Typography
@@ -73,7 +74,7 @@ export const SingleExperiment = ({
           {description}
         </Typography>
       </Box>
-      <Box>
+      <Box sx={{ px:"10px"}}>
         <IconButton onClick={() => window.open(link, "_blank")}>
           <Link width={20} height={20} />
         </IconButton>

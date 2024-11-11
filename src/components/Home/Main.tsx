@@ -60,18 +60,18 @@ export const Main = () => {
             gap: "40px",
           }}
         >
-          <Link href={GITHUB_URL as string}>
+          <Link href={GITHUB_URL as string} target="_blank">
             <ImgIcon path={"/icons/github.svg"} />
           </Link>
-          <Link href={LINKEDIN_URL as string}>
+          <Link href={LINKEDIN_URL as string} target="_blank">
             <ImgIcon path={"/icons/linkedin.svg"} />
           </Link>
-          <Link href={INSTAGRAM_URL as string}>
+          {/* <Link href={INSTAGRAM_URL as string}>
             <ImgIcon path={"/icons/instagram.svg"} />
           </Link>
           <Link href={TWITTER_URL as string}>
             <ImgIcon path={"/icons/twitter.svg"} />
-          </Link>
+          </Link> */}
         </Box>
       </Box>
     </Box>

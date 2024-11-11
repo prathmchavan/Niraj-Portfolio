@@ -18,7 +18,7 @@ export const ExperienceComp = () => {
         flex: 1,
       }}
     >
-      <Header icon={<Experience />} title="experience" />
+      <Header icon={<Experience />} title="Experience" />
       <Timeline
         sx={{
           flex: 1,
@@ -28,68 +28,45 @@ export const ExperienceComp = () => {
         }}
       >
         <TimeLineItem
-          company="Sumus Engineer Pvt. Ltd."
-          location={"Jalgaon, Maharashtra"}
+          company="iAastha Technologies"
+          location={"Mumbai, Maharashtra"}
           work={[
-            "Developed and Deployed a Full-Scale Meal Service Platform that works on subscription basis and eases lives of students, working professionals & senior citizens. Deployed it's backend on AWS EC2 and hosted it's frontend on GoDaddy.",
-            "Conducted Comprehensive Market Research necessary for building the foundations for the business.",
-            "Designed and Implemented Marketing Funnels to help convert prospects into leads and leads into paying customers.",
-            "Managed Social Media and Performance Marketing campaign.",
-            "Executed Sales Strategies for Mess Management Software by visiting messes and demonstrating them our software.",
-            "Ensured High-Quality Service Delivery of meals (lunches and dinners) to our initial paying customers",
+            "Building data extraction pipelines in Python for efficient processing of diverse data sources, ensuring high-quality outputs",
+            "Built well-documented and efficient APIs using Node.js for seamless communication and integration between software systems"
           ]}
-          period={"Dec 2023 - June 2024"}
-          position={"Founder & CTO"}
+          period={"Dec 2021 - Oct 2022"}
+          position={"Junior Developer"}
           logo={"/company/om.png"}
         />
 
         <TimeLineItem
-          company="Renocrew Solutions"
-          location="Jalgaon, Maharashtra"
+          company="Networcx"
+          location="Pune, Maharashtra"
           work={[
-            "Crafted Engaging User Interfaces using Next JS, GSAP, Framer Motion and similar such libraries.",
-            "Enhanced User Experience of pre-existing front-ends, prioritised tasks and delivered them smoothly and within deadline.",
-            "Upscaled myself with the current industry standards while working for clients all over the world.",
+            "Crafted visually stunning user interfaces to elevate the overall aesthetic appeal and usability of web applications.",
+            "Focused on delivering enduring user experiences, ensuring seamless navigation and interaction for enhanced engagement.",
+            "Utilized Angular Material, Bootstrap, and Syncfusion in development tasks to enrich UI design and functionality.",
+            "Expert in API development, facilitating seamless communication between various components of the application",
+            "Workedd with Entity Framework alongside MS SQL to efficiently manage data and enhance database functionality",
+            "Collaborated with cross-functional teams to gather requirements, provide technical expertise, and drive project success.",
+            "Played a key role in Agile project management, actively engaging with clients to gather feedback, prioritize tasks, and ensure timely delivery of solutions.",
+            "Conducted regular check-ins and follow-ups with clients to address any issues or concerns, maintaining high levels of customer satisfaction and loyalty"
           ]}
-          period={"July 2023 - Nov 2024"}
-          position={"Senior Frontend Developer"}
+          period={"Nov 2022 - Aug 2024"}
+          position={"Software developer"}
           logo={"/company/reno.png"}
         />
 
         <TimeLineItem
-          company="EJY Health"
-          location="Patna, Bihar"
+          company="Onit"
+          location="Pune , Maharashtra"
           work={[
-            "Collaborated with cross-functional teams as a product development intern at a health-focused startup, taking ownership of backend development with microservices architecture.",
-            "Designed, developed, and maintained backend microservices, contributing to the foundation of a robust and scalable health community platform.",
-            "Worked on building the backend of blogging application for healthcare domain using PostgreSQL, Node JS and AWS",
+            "Leveraged Angular 17 to implement state management techniques with RXJS and integrate Angular Material library, resulting in enhanced UI design and seamless navigation",
+            "Supported cross-functional development efforts, fostering collaboration among teams to ensure project success and streamline workflows.",
           ]}
-          period={"June 2023 - Sept 2024"}
-          position="Product Development Intern"
+          period={"Aug 2024 - Present"}
+          position="Solution Engineer | "
           logo={"/company/ejywebp.webp"}
-        />
-
-        <TimeLineItem
-          company="Sumus Engineer Pvt. Ltd."
-          location="Jalgaon, Maharashtra"
-          work={[
-            "Spearheaded the technical direction of a startup dedicated to fostering an engaged engineer's community.",
-            "Implemented custom text-editor, rewarding system for micro interactions, complex authentication in Next JS and worked with several mongoose middlewares.",
-          ]}
-          period={"Sept 2022 - June 2024"}
-          position="Tech Lead"
-          logo={"/company/wae.svg"}
-        />
-        <TimeLineItem
-          company="Sumus Engineer Pvt. Ltd."
-          location="Jalgaon, Maharashtra"
-          work={[
-            "Contributed to the development of an architect-focused ecommerce platform, enabling design buying and selling for homes.",
-            "Designed and implemented intuitive web interfaces, worked with firebase while integrating essential e-commerce functionalities to enhance user experience and drive seamless transactions within the architecture community.",
-          ]}
-          period={"Sept 2022 - June 2024"}
-          position="Full Stack Development Intern"
-          logo={"/company/wae.svg"}
         />
       </Timeline>
     </Box>

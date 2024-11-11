@@ -12,7 +12,7 @@ export const ExperimentsComp = () => {
         flex: 1,
       }}
     >
-      <Header icon={<Experiments />} title="experiments" />
+      <Header icon={<Experiments />} title="Experiments" />
       <Box
         sx={{
           display: "grid",
@@ -34,18 +34,6 @@ export const ExperimentsComp = () => {
                 title: "OnlyMess - Meal At Your Place",
                 description: "OnlyMess was first of it's kind meal (Breakfast, Lunches & Dinner) as a service platform.",
                 link: "https://onlymess.in"
-            },
-            {
-                image: "/experiments/wae.png",
-                title: "We Are Engineer - Engineering Community",
-                description: "WAE is the community of engineers, so that they can learn from each others and support each other in their journey along." ,
-                link: "https://weareengineer.com"
-            }, 
-            {
-                image: "/experiments/thrive.png",
-                title: "Thrive Care Demo",
-                description: "Thrive Care is a platform where users can book their consultation with their therapist. And also, where therapists can manage their bookings and all sort of stuff.",
-                link: "https://thrive-care.vercel.app"
             },
             {
                 image: "/experiments/magic.png",

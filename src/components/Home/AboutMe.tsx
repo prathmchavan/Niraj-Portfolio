@@ -17,7 +17,7 @@ export const AboutMe = () => {
         color:"white"
       }}
     >
-      <Header icon={<Person />} title="about me" />
+      <Header icon={<Person />} title="About me" />
       <Box
         sx={{
           display: "flex",
@@ -53,7 +53,7 @@ export const AboutMe = () => {
               color: "white",
             }}
           >
-            hey there, <span style={{ fontWeight: 600 }}>myself Nirja</span>
+            hey there, <span style={{ fontWeight: 600 }}>myself Niraj</span>
           </Typography>
 
           <Typography
