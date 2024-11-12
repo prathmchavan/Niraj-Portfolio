@@ -51,7 +51,7 @@ export const Main = () => {
             textAlign: ["center", "center"],
           }}
         >
-          startups, development, devops, marketing, business
+          Custom software development for enterprise
         </Typography>
         <Box
           sx={{

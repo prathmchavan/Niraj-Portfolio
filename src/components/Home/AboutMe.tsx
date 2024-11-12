@@ -53,7 +53,7 @@ export const AboutMe = () => {
               color: "white",
             }}
           >
-            hey there, <span style={{ fontWeight: 600 }}>myself Niraj</span>
+            Hey there, <span style={{ fontWeight: 600 }}>Niraj here</span>
           </Typography>
 
           <Typography
@@ -63,23 +63,9 @@ export const AboutMe = () => {
               lineHeight: "30px"
             }}
           >
-            i specialize in <strong>full-stack development</strong> with a strong proficiency in <strong>devops</strong> and a deep interest in <strong>unix programming</strong>. my passion lies in working on projects, and you&apos;ll often find me immersed in development tasks, constantly honing my skills.
-          </Typography>
-
-          <Typography
-            sx={{
-              fontWeight: 400,
-              color: "color",
-              lineHeight: "30px"
-            }}
-          >
-            beyond development, i am highly enthusiastic about <strong>startups</strong>. i ventured into entrepreneurship with my own startup, <Link
-              href={"https://onlymess.ion"}
-              target="_blank"
-              style={{ textDecoration: "underline", color: "white" }}
-            >
-              <strong>onlymess</strong>
-            </Link>. although we had to halt its operations due to my initial lack of knowledge in startup fundamentals, this experience ignited a desire to understand the intricacies of building and scaling a business. i am now diligently learning the essentials of startups, from marketing to sales, by actively working at a startup.
+            I specialize in <strong>n developing custom software solutions for enterprises,</strong> with 5 years of hands-on experience across various domains like <strong> logistics, supply chain, legal contract management,
+            and custom software services. </strong> and a deep interest in <strong>unix programming</strong>. I bring the best of both worlds—a seamless UX paired with
+            the kind of robustness you’d expect from Elon Musk’s Starship.
           </Typography>
           <Typography
             sx={{
@@ -87,7 +73,8 @@ export const AboutMe = () => {
               lineHeight: "30px"
             }}
           >
-            my expertise extends beyond development. i am well-versed in <strong>project management</strong>, <strong>marketing</strong>, and <strong>business research</strong>, with a proven track record in these areas.
+          If you’re looking for the right person to bring your next big idea to life, I’m confident I’m the
+          one you need.
           </Typography>
         </Box>
       </Box>
