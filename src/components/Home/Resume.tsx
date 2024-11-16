@@ -59,7 +59,7 @@ export const ResumeComp = () => {
             }}
           >
             For a more formal introduction, download my resume by clicking the
-            button below!
+            button Download below!
           </Typography>
           <Box>
           <Button
