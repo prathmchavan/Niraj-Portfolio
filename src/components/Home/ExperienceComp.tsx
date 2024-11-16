@@ -27,17 +27,7 @@ export const ExperienceComp = () => {
           p: [0, "auto"],
         }}
       >
-        <TimeLineItem
-          company="iAastha Technologies"
-          location={"Mumbai, Maharashtra"}
-          work={[
-            "Building data extraction pipelines in Python for efficient processing of diverse data sources, ensuring high-quality outputs",
-            "Built well-documented and efficient APIs using Node.js for seamless communication and integration between software systems"
-          ]}
-          period={"Dec 2021 - Oct 2022"}
-          position={"Junior Developer"}
-          logo={"/company/om.png"}
-        />
+
 
         <TimeLineItem
           company="Networcx"
@@ -52,12 +42,24 @@ export const ExperienceComp = () => {
             "Played a key role in Agile project management, actively engaging with clients to gather feedback, prioritize tasks, and ensure timely delivery of solutions.",
             "Conducted regular check-ins and follow-ups with clients to address any issues or concerns, maintaining high levels of customer satisfaction and loyalty"
           ]}
-          period={"Nov 2022 - Aug 2024"}
+          period={"Nov 2022 - Oct 2024"}
           position={"Software developer"}
-          logo={"/company/reno.png"}
+          logo={"/company/networcx_logo.jpeg"}
         />
 
         <TimeLineItem
+          company="iAastha Technologies"
+          location={"Mumbai, Maharashtra"}
+          work={[
+            "Building data extraction pipelines in Python for efficient processing of diverse data sources, ensuring high-quality outputs",
+            "Built well-documented and efficient APIs using Node.js for seamless communication and integration between software systems"
+          ]}
+          period={"Dec 2021 - Oct 2022"}
+          position={"Junior Developer"}
+          logo={"/company/iaastha.jpeg"}
+        />
+
+        {/* <TimeLineItem------------No Need at the moment
           company="Onit"
           location="Pune , Maharashtra"
           work={[
@@ -67,7 +69,8 @@ export const ExperienceComp = () => {
           period={"Aug 2024 - Present"}
           position="Solution Engineer | "
           logo={"/company/ejywebp.webp"}
-        />
+        /> */}
+
       </Timeline>
     </Box>
   );

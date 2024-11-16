@@ -78,10 +78,11 @@ export const TimeLineItem = ({
                 fontWeight: 700,
               }}
             >
-              {company.toLowerCase()}{" "}
+              {/* {company.toLowerCase()}{" "} */}
+              <span style={{ width: "100%", color: "white" }}>{company}<br /></span>
             </Typography>
             <Typography sx={{ fontWeight: 700, color: "white", marginLeft: [0, "12px"] }}>
-              {period.toLowerCase()}
+            <span>{period.toLowerCase()}<br /></span>
             </Typography>
           </Box>
           <Typography sx={{ fontWeight: 500 }}>

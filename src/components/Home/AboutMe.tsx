@@ -63,8 +63,8 @@ export const AboutMe = () => {
               lineHeight: "30px"
             }}
           >
-            I specialize in <strong>n developing custom software solutions for enterprises,</strong> with 5 years of hands-on experience across various domains like <strong> logistics, supply chain, legal contract management,
-            and custom software services. </strong> and a deep interest in <strong>unix programming</strong>. I bring the best of both worlds—a seamless UX paired with
+            I specialize in <strong> developing custom software solutions for enterprises,</strong> with 3 years of hands-on experience across various domains like <strong> logistics, supply chain, legal contract management
+            and custom software services. </strong> A deep interest in <strong>unix programming</strong>. I bring the best of both worlds—a seamless UX paired with
             the kind of robustness you’d expect from Elon Musk’s Starship.
           </Typography>
           <Typography

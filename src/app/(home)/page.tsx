@@ -17,7 +17,7 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        maxWidth: "100vw",
+        maxWidth: "200vw",
         overflowX: "hidden",
         backgroundColor:"black",
         color :'white'
@@ -50,16 +50,15 @@ export default function Home() {
         <Box
           sx={{
             position: "relative",
-            width: [80, 150],
-            height: [120, 240]
+            width: [120, 200],
+            height: [160, 280]
           }}
         >
           <Image
-            src={"/home/chibi.png"}
+            src={"/home/pngwinc.png"}
             alt={"Naruto"}
             fill
             style={{
-              
               objectFit: "cover",
             }}
           />
