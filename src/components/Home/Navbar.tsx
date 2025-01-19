@@ -1,20 +1,26 @@
 "use client";
 
 import { Box, Card, IconButton, Tooltip, Typography } from "@mui/material";
+import { useState } from "react";
 import {
   Education,
   Experience,
   Experiments,
   Hamburger,
-  ImgIcon,
   Person,
   Resume,
   Tools,
 } from "../Global";
-import { useState } from "react";
 
 export const Navbar = () => {
   const [trayIn, setTrayIn] = useState(false);
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Box
@@ -41,7 +47,7 @@ export const Navbar = () => {
           backgroundPosition: "0% 80%",
           backgroundSize: "cover",
           backgroundClip: "text",
-          textFillColor: "tra nsparent",
+          textFillColor: "transparent",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           filter: "grayscale(100%)",
@@ -61,7 +67,7 @@ export const Navbar = () => {
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "none",
-          backgroundColor:"black"
+          backgroundColor: "black",
         }}
         onMouseLeave={() => setTrayIn(false)}
       >
@@ -74,77 +80,98 @@ export const Navbar = () => {
             }}
           >
             <Tooltip title="Profile" arrow={true} placement="left">
-              <IconButton sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("profile")}
+              >
                 <Person />
               </IconButton>
             </Tooltip>
             <Tooltip title="Experience" arrow={true} placement="left">
-              <IconButton sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("experience")}
+              >
                 <Experience />
               </IconButton>
             </Tooltip>
             <Tooltip title="Skills" arrow={true} placement="left">
-              <IconButton  sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("skills")}
+              >
                 <Tools />
               </IconButton>
             </Tooltip>
             <Tooltip title="Education" arrow={true} placement="left">
-              <IconButton  sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("education")}
+              >
                 <Education />
               </IconButton>
             </Tooltip>
             <Tooltip title="Experiments" arrow={true} placement="left">
-              <IconButton sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("experiments")}
+              >
                 <Experiments />
               </IconButton>
             </Tooltip>
             <Tooltip title="Resume" arrow={true} placement="left">
-              <IconButton sx={{
-            color:"white",
-            ":hover":{
-              backgroundColor:"white",
-              color:"black"
-            }
-          }}>
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("resume")}
+              >
                 <Resume />
               </IconButton>
             </Tooltip>
           </Box>
         ) : (
-          <IconButton onMouseEnter={() => setTrayIn(true)}  sx={{
-            color: "white"
-          }}>
-            <Hamburger width={15} height={15}  />
+          <IconButton
+            onMouseEnter={() => setTrayIn(true)}
+            sx={{
+              color: "white",
+            }}
+          >
+            <Hamburger width={15} height={15} />
           </IconButton>
         )}
       </Card>

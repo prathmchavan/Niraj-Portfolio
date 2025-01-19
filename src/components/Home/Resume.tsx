@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const ResumeComp = () => {
   return (
-    <Box
+    <Box id="resume"
       sx={{
         px: ["20px", "100px"],
         py: "50px",
