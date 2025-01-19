@@ -56,7 +56,7 @@ export const ExperimentsComp = () => {
             {
                 image: "/experiments/bitlords.png",
                 title: "Bitlords Club",
-                description: "Bitlords Club, was the first club in our college, S.S.B.T's C.O.E.T., pleasured to be the lead in it's foundation.",
+                description: "Bitlords Club, was the first club in our college, pleasured to be the lead in it's foundation.",
                 link: "https://bitlords.vercel.app"
             }
         ].map((v, idx) => 
