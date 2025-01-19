@@ -88,7 +88,7 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("profile")}
+                onClick={() => handleScroll("profile")} //to scroll to the profile section
               >
                 <Person />
               </IconButton>
