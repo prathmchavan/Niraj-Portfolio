@@ -10,7 +10,7 @@ const LottieWithNoSSR = dynamic(() => import('lottie-react'), { ssr: false });
 
 export const AboutMe = () => {
   return (
-    <Box
+    <Box id="profile"
       sx={{
         px: ["20px", "100px"],
         py: "50px",

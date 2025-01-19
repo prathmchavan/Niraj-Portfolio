@@ -5,7 +5,7 @@ import { SingleExperiment } from "./SingleExperiment";
 
 export const ExperimentsComp = () => {
   return (
-    <Box
+    <Box id="experiments"
       sx={{
         px: ["20px", "100px"],
         py: "50px",

@@ -4,7 +4,7 @@ import { SkillComponent } from "./SkillComponent";
 
 export const Skills = () => {
   return (
-    <Box
+    <Box id="skills"
       sx={{
         px: ["20px", "100px"],
         py: "50px",

@@ -11,7 +11,7 @@ import { TimeLineItem } from "./TimeLineItem";
 
 export const ExperienceComp = () => {
   return (
-    <Box
+    <Box id="experience"
       sx={{
         px: ["20px", "100px"],
         py: "50px",
