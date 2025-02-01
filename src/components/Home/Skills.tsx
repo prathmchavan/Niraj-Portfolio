@@ -18,15 +18,15 @@ export const Skills = () => {
           gridTemplateColumns: ["repeat(1, 1fr)", "repeat(2, 1fr)"],
           gap: 2,
           my: "80px",
-        }}
+        }}  
       >
         <SkillComponent
-          image={"/skills/web.png"}
+          image={"/skills/web4.png"}
           title="Web Development"
           sub="(HTML, CSS, Javascript, Typescript)"
         />
         <SkillComponent
-          image={"/skills/nextjs.png"}
+          image={"/skills/an4.png"}
           title="Frontend Development"
           sub="(Next JS, React JS, Angular JS)"
         />
@@ -61,7 +61,7 @@ export const Skills = () => {
           sub="(Docker, Kubernetes)"
         />
         <SkillComponent
-          image={"/skills/aws.png"}
+          image={"/skills/awws.png"}
           title="Micro-services"
           sub="(AWS EC2, Apache Kafka)"
         />
