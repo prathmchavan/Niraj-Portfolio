@@ -34,7 +34,7 @@ export const ResumeComp = () => {
           // width={600}
           // height={300}
           fill
-          alt={"Ajinkya's Resume"}
+          alt={"Niraj's Resume"}
           style={{
             objectFit: "contain",
             border: "1px solid #D9D9D9",
@@ -59,7 +59,7 @@ export const ResumeComp = () => {
             }}
           >
             For a more formal introduction, download my resume by clicking the
-            button Download below!
+            button Download below or contact me for more details!
           </Typography>
           <Box>
           <Button
@@ -78,10 +78,43 @@ export const ResumeComp = () => {
           >
             Download Resume
           </Button>
+
+          <Button
+            sx={{
+              backgroundColor: "white",
+              marginLeft: "20px",
+              color: "black",
+              textTransform: "capitalize",
+              px: "30px",
+              py: "12px",
+              ":hover": {
+                backgroundColor: "gray",
+                color:"white  "
+              }
+            }}
+            
+            href="mailto:nirajchavan2511@gmail.com?subject=Contacted from Portfolio&body=Hi Niraj,"
+          >
+            Contact Me
+          </Button>
           
           </Box>
+          <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "24px",
+          }}
+        >
+        </Box>
         </Box>
       </Box>
+      <Box
+          sx={{
+            marginBottom: "200px",
+          }}
+        >          
+        </Box>
     </Box>
   );
 };

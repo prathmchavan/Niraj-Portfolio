@@ -51,7 +51,7 @@ export const Main = () => {
             textAlign: ["center", "center"],
           }}
         >
-          Full Stack Developer | Web Developer | Web Designer | DevOps
+          Full Stack Developer | Web Developer | Solution Engineer | Web Designer | DevOps
         </Typography>
         <Box
           sx={{
