@@ -23,11 +23,11 @@ export const ExperimentsComp = () => {
       >
         {[
             {
-                image: "/experiments/coolify.png",
-                title: "Coolify - LinkedIn Collections",
-                description: "Coolify let's you save LinkedIn posts in domain specific collections, which of course you can create. It is useful for developers, SDRs, BDE's and almost everyone who uses LinkedIn for upsckilling.",
+                image: "/experiments/asp-docs.png",
+                title: "ASP.NET Zero - Open Source Countribution",
+                description: "ASP.NET Zero provide a robust and feature-rich starting point for new web applications built with ASP.NET Core, Entity Framework Core, and Angular. Got Featured for doing the documentation.",
                 github: "",
-                link: "https://coolify.top"
+                link: "https://docs.aspnetzero.com/aspnet-core-angular/latest/Developing-Step-By-Step-Angular-Adding-New-Menu-Item"
             }, 
             {
                 image: "/experiments/onlymess.png",

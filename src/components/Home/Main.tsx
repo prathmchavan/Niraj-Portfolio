@@ -41,6 +41,7 @@ export const Main = () => {
             textFillColor: "transparent",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
+            width: "1000px",
           }}
         >
           Niraj Chavan
@@ -51,7 +52,7 @@ export const Main = () => {
             textAlign: ["center", "center"],
           }}
         >
-          Full Stack Developer | Web Developer | Solution Engineer | Web Designer | DevOps
+          Full Stack Developer | Web Developer | Solution Engineer | Web Designer | Front End lover | DevOps
         </Typography>
         <Box
           sx={{
