@@ -107,20 +107,6 @@ export const Navbar = () => {
                 <Experience />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Skills" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => handleScroll("skills")}
-              >
-                <Tools />
-              </IconButton>
-            </Tooltip>
             <Tooltip title="Education" arrow={true} placement="left">
               <IconButton
                 sx={{
@@ -133,6 +119,20 @@ export const Navbar = () => {
                 onClick={() => handleScroll("education")}
               >
                 <Education />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Skills" arrow={true} placement="left">
+              <IconButton
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "white",
+                    color: "black",
+                  },
+                }}
+                onClick={() => handleScroll("skills")}
+              >
+                <Tools />
               </IconButton>
             </Tooltip>
             <Tooltip title="Experiments" arrow={true} placement="left">

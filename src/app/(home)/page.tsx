@@ -29,11 +29,13 @@ export default function Home() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: ["column", "row"]
+          // Force a single-column layout so Experience appears above Education
+          flexDirection: "column",
+          gap: 4,
         }}
       >
         <ExperienceComp />
-        <Box>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
           <EducationComp />
           <Skills />
         </Box>

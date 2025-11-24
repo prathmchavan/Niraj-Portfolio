@@ -18,7 +18,7 @@ export const EducationComp = () => {
         flex: 1
       }}
     >
-      <Header icon={<Education />} title="education" />
+  <Header icon={<Education />} title="Education" />
       <Timeline
         sx={{
           flex: 1,

@@ -17,7 +17,7 @@ export const AboutMe = () => {
         color:"white"
       }}
     >
-      <Header icon={<Person />} title="About me" />
+  <Header icon={<Person />} title="About Me" />
       <Box
         sx={{
           display: "flex",
