@@ -11,7 +11,7 @@ export const Skills = () => {
         flex: 1,
       }}
     >
-      <Header icon={<Tools />} title="skills" />
+  <Header icon={<Tools />} title="Skills" />
       <Box
         sx={{
           display: "grid",
