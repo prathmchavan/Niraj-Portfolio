@@ -21,13 +21,45 @@ export const ExperienceComp = () => {
       <Header icon={<Experience />} title="Experience" />
       <Timeline
         sx={{
-          flex: 1,
+          //flex: 1,
+          display: "flex",
           ".MuiTimelineItem-missingOppositeContent:before": { content: "none" },
           my: "80px",
           p: [0, "auto"],
         }}
       >
 
+        <TimeLineItem
+          company="Onit"
+          location="Pune, Maharashtra"
+          work={[
+                "Act as a technical solutions advisor for enterprise and mid-market clients, translating business requirements into scalable solution designs.",
+                "Own end-to-end solution delivery (discovery → implementation → optimization), improving client adoption and retention.",
+                "Drive cross-functional alignment across product, engineering, and business teams to resolve complex technical issues and meet delivery timelines.",
+                "Operate in high-volume, multi-client environments, balancing competing priorities while maintaining service quality.",
+                "Build deep system expertise, enabling independent troubleshooting and reducing reliance on engineering teams.",
+                "Develop an internal Chrome extension to streamline support workflows by automating OTT authentication and surfacing key data.",
+                "Reduce login time by ~93% (~5 minutes per environment batch).",
+                "Improve support turnaround time and team productivity.",
+                "Identify operational bottlenecks and translate them into scalable internal tooling, demonstrating strong architectural thinking beyond core responsibilities."
+              ]} 
+         period={"Dec 2025 - Current"}
+          position={"Solution Engineer II"}
+          logo={"/company/onit_logo.jpeg"}
+        />
+
+        <TimeLineItem
+          company="Onit"  
+          location="Pune, Maharashtra"
+          work={["Delivered customized client solutions by configuring and adapting product capabilities to meet diverse business use cases.",
+                "Thrived in a remote, cross-functional environment by maintaining clear documentation, accountability, and consistent communication.",
+                "Built strong client relationships through consultative problem-solving, driving higher engagement and repeat business.",
+                "Enhanced team efficiency by maintaining structured documentation and enabling effective knowledge sharing across teams."
+              ]}
+          period={"Aug 2024 - Dec 2025"}
+          position={"Solution Engineer"}
+          logo={"/company/onit_logo.jpeg"}
+        />
 
         <TimeLineItem
           company="Networcx"
@@ -43,7 +75,7 @@ export const ExperienceComp = () => {
             "Conducted regular check-ins and follow-ups with clients to address any issues or concerns, maintaining high levels of customer satisfaction and loyalty"
           ]}
           period={"Nov 2022 - Oct 2024"}
-          position={"Software developer"}
+          position={"Software Developer"}
           logo={"/company/networcx_logo.jpeg"}
         />
 

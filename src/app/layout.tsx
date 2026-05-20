@@ -6,7 +6,7 @@ import { AllProviders } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ajinkyaportfolio.vercel.app"),
+  metadataBase: new URL("https://nirajportfolio.vercel.app"),
   title: "Niraj",
   description:
     "I am Niraj Chavan and this is my portfolio.",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "max-snippet": 150,
     },
   },
-  icons: ["/logo/192x192.png", "/logo/384x384.png", "/logo/500x500.png"],
+  icons: ["/favicon.ico"],
   keywords: [
     "Niraj",
     "full stack",

@@ -58,7 +58,7 @@ export default function Home() {
         >
           <Image
             src={"/home/pngwinc.png"}
-            alt={"Naruto"}
+            alt={"Nemo"}
             fill
             style={{
               objectFit: "cover",

@@ -29,18 +29,18 @@ export const ExperimentsComp = () => {
                 github: "",
                 link: "https://docs.aspnetzero.com/aspnet-core-angular/latest/Developing-Step-By-Step-Angular-Adding-New-Menu-Item"
             }, 
-            {
-                image: "/experiments/onlymess.png",
-                title: "OnlyMess - Meal At Your Place",
-                description: "OnlyMess was first of it's kind meal (Breakfast, Lunches & Dinner) as a service platform.",
-                link: "https://onlymess.in"
-            },
-            {
-                image: "/experiments/magic.png",
-                title: "Magic Pitches Demo",
-                description: "Magic Pitches is a platform for Lead Generation.",
-                link: "https://thrive-care.vercel.app"
-            },
+            // {
+            //     image: "/experiments/onlymess.png",
+            //     title: "OnlyMess - Meal At Your Place",
+            //     description: "OnlyMess was first of it's kind meal (Breakfast, Lunches & Dinner) as a service platform.",
+            //     link: "https://onlymess.in"
+            // },
+            // {
+            //     image: "/experiments/magic.png",
+            //     title: "Magic Pitches Demo",
+            //     description: "Magic Pitches is a platform for Lead Generation.",
+            //     link: "https://thrive-care.vercel.app"
+            // },
             {
                 image: "/experiments/unibot.png",
                 title: "Unibot Clone",

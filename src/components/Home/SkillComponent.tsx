@@ -41,10 +41,10 @@ export const SkillComponent = ({
             gap: "6px",
           }}
         >
-          <Typography>{title}</Typography>
+          <Typography sx={{ fontSize: "1.1rem", fontWeight: 600 }}>{title}</Typography>
           <Typography
             sx={{
-              fontSize: "12px",
+              fontSize: "0.9rem",
               color: "rgba(0, 0, 0, 0.5)",
             }}
           >

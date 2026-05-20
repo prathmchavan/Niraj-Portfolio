@@ -61,6 +61,7 @@ export const SingleExperiment = ({
         <Typography
           sx={{
             fontWeight: 600,
+            fontSize: "1.1rem",
           }}
         >
           {title}
@@ -69,6 +70,7 @@ export const SingleExperiment = ({
           sx={{
             color: "grey",
             fontWeight: 400,
+            fontSize: "0.95rem",
           }}
         >
           {description}
