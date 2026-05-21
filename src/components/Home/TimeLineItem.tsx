@@ -76,20 +76,20 @@ export const TimeLineItem = ({
             <Typography
               sx={{
                 fontWeight: 700,
+                fontSize: "1.1rem",
               }}
             >
-              {/* {company.toLowerCase()}{" "} */}
               <span style={{ width: "100%", color: "white" }}>{company}<br /></span>
             </Typography>
-            <Typography sx={{ fontWeight: 700, color: "white", marginLeft: [0, "12px"] }}>
-            <span>{period.toLowerCase()}<br /></span>
+            <Typography sx={{ fontWeight: 700, color: "white", marginLeft: [0, "12px"], fontSize: "1rem" }}>
+            <span>{period}<br /></span>
             </Typography>
           </Box>
-          <Typography sx={{ fontWeight: 500 }}>
-            {position.toLowerCase()}
+          <Typography sx={{ fontWeight: 500, fontSize: "1rem" }}>
+            {position}
           </Typography>
-          <Typography sx={{ color: "white" }}>
-            {location.toLowerCase()}
+          <Typography sx={{ color: "white", fontSize: "0.95rem" }}>
+            {location}
           </Typography>
         </Box>
         <ul
@@ -101,8 +101,8 @@ export const TimeLineItem = ({
         >
           {work?.map((w, idx) => (
             <li key={idx}>
-              <Typography sx={{ fontWeight: 400 }}>
-                {w.toLowerCase()}
+              <Typography sx={{ fontWeight: 400, fontSize: "0.95rem" }}>
+                {w}
               </Typography>
             </li>
           ))}
