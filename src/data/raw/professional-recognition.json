@@ -1,0 +1,73 @@
+[
+  {
+    "id": "ai-productivity-recognition",
+
+    "metadata": {
+      "title": "AI Productivity Recognition",
+
+      "summary":
+        "Recognized in organizational AI initiatives for sharing practical AI productivity approaches in engineering workflows.",
+
+      "capabilities": [
+        "AI Productivity",
+        "Engineering Efficiency",
+        "AI Tooling",
+        "Developer Productivity"
+      ],
+
+      "domains": [
+        "Artificial Intelligence",
+        "Engineering Productivity"
+      ],
+
+      "businessImpact": [
+        "Improved engineering workflows",
+        "Promoted practical AI adoption",
+        "Shared AI productivity best practices"
+      ],
+
+      "url":
+        "YOUR_LINKEDIN_POST_URL",
+
+      "embeddingText":
+        "Niraj was featured in organizational AI initiatives for sharing practical approaches to using AI tools for software engineering productivity, engineering efficiency, and delivery optimization."
+    }
+  },
+
+  {
+    "id": "aspnet-zero-open-source",
+
+    "metadata": {
+      "title": "ASP.NET Zero Open Source Contribution",
+
+      "summary":
+        "Contributed documentation improvements to the ASP.NET Zero ecosystem and received recognition from maintainers.",
+
+      "capabilities": [
+        "ASP.NET Core",
+        "Angular",
+        "Entity Framework Core",
+        "Documentation",
+        "Open Source"
+      ],
+
+      "domains": [
+        "Open Source",
+        "Developer Experience",
+        "Documentation"
+      ],
+
+      "businessImpact": [
+        "Improved ecosystem documentation",
+        "Enhanced developer experience",
+        "Recognized by maintainers"
+      ],
+
+      "url":
+        "YOUR_GITHUB_OR_CONTRIBUTION_LINK",
+
+      "embeddingText":
+        "Niraj contributed documentation improvements to ASP.NET Zero built with ASP.NET Core, Angular, and Entity Framework Core and was recognized by maintainers for open source contributions."
+    }
+  }
+]

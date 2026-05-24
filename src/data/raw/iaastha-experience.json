@@ -1,0 +1,35 @@
+{
+  "id": "iaastha-junior-developer",
+
+  "metadata": {
+    "title": "iAastha Technologies Backend Experience",
+
+    "summary":
+      "Built Python data processing pipelines and Node.js integration services.",
+
+    "capabilities": [
+      "Python",
+      "Node.js",
+      "Backend Engineering",
+      "API Services",
+      "Data Pipelines",
+      "System Integration"
+    ],
+
+    "domains": [
+      "Backend Development",
+      "Data Engineering"
+    ],
+
+    "businessImpact": [
+      "Improved large-scale data handling",
+      "Enabled API integrations"
+    ],
+
+    "url":
+      "YOUR_LINKEDIN_URL",
+
+    "embeddingText":
+      "Niraj worked at iAastha Technologies as a Junior Developer building Python data processing pipelines and Node.js API services supporting integrations and scalable data workflows."
+  }
+}

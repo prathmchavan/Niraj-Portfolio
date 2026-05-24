@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { ImgIcon } from "../Global";
 import Link from "next/link";
 import {
@@ -52,8 +52,7 @@ export const Main = () => {
             textAlign: ["center", "center"],
           }}
         >
-          Full Stack Developer | Web Developer | Solution Engineer | Web Designer | Front End lover | DevOps
-        </Typography>
+Fullstack Engineer | AI-Driven Developer | Solution Engineer | Automation Builder | Frontend Specialist | AI Productivity Advocate        </Typography>
         <Box
           sx={{
             display: "flex",
@@ -73,6 +72,16 @@ export const Main = () => {
           <Link href={TWITTER_URL as string}>
             <ImgIcon path={"/icons/twitter.svg"} />
           </Link> */}
+        </Box>
+        <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", mt: 2, gap: 1 }}>
+          <Link href="/ai-candidate-assistant">
+            <Button variant="contained" sx={{ backgroundColor: "#7c3aed", color: "white", transition:"transform 0.18s ease, box-shadow 0.18s ease" }}>
+              Launch AI Recruiter Assistant
+            </Button>
+          </Link>
+          <Typography sx={{ fontSize: 16, textAlign: "center", maxWidth: 820 }}>
+            Interactively evaluate Niraj’s technical expertise, engineering mindset, startup fit and project experience through an AI-powered recruiter assistant.
+          </Typography>
         </Box>
       </Box>
     </Box>

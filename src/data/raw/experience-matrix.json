@@ -1,0 +1,102 @@
+{
+  "technologies": [
+    {
+      "name": "C#",
+      "years": 4,
+      "confidence": "high",
+      "lastUsed": "2025",
+      "areas": [
+        "ASP.NET Core",
+        "backend engineering",
+        "enterprise applications",
+        "API development"
+      ]
+    },
+    {
+      "name": ".NET",
+      "years": 4,
+      "confidence": "high",
+      "lastUsed": "2025",
+      "areas": [
+        "enterprise systems",
+        "web applications",
+        "backend services"
+      ]
+    },
+    {
+      "name": "Angular",
+      "years": 4,
+      "confidence": "high",
+      "lastUsed": "2026",
+      "areas": [
+        "frontend engineering",
+        "responsive UI",
+        "dashboard applications"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "years": 3,
+      "confidence": "high",
+      "lastUsed": "2025",
+      "areas": [
+        "frontend applications",
+        "scalable UI systems"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "years": 4,
+      "confidence": "high",
+      "lastUsed": "2025",
+      "areas": [
+        "frontend engineering",
+        "browser automation",
+        "Chrome extensions"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "years": 1,
+      "confidence": "medium",
+      "lastUsed": "2025",
+      "areas": [
+        "AI-powered applications",
+        "portfolio systems",
+        "React ecosystem"
+      ]
+    },
+    {
+      "name": "React",
+      "years": 1,
+      "confidence": "medium",
+      "lastUsed": "2025",
+      "areas": [
+        "modern frontend development",
+        "AI applications"
+      ]
+    },
+    {
+      "name": "AI Engineering",
+      "years": 2,
+      "confidence": "medium",
+      "lastUsed": "2025",
+      "areas": [
+        "AI productivity",
+        "LLM experimentation",
+        "workflow optimization",
+        "AI-assisted engineering"
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "years": 2,
+      "confidence": "medium",
+      "lastUsed": "2025",
+      "areas": [
+        "support workflows",
+        "enterprise integrations"
+      ]
+    }
+  ]
+}
