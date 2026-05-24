@@ -1,0 +1,45 @@
+[
+  {
+    "strength": "Workflow Automation",
+    "evidence": [
+      "chrome-extension-internal-tool"
+    ]
+  },
+  {
+    "strength": "AI Productivity Mindset",
+    "evidence": [
+      "onit-chief-ai-office-recognition"
+    ]
+  },
+  {
+    "strength": "Technical Communication",
+    "evidence": [
+      "aspnetzero-open-source-contribution"
+    ]
+  },
+  {
+    "strength": "Frontend Engineering",
+    "evidence": [
+      "harshx-portfolio"
+    ]
+  },
+  {
+    "strength": "Operational Efficiency",
+    "evidence": [
+      "chrome-extension-internal-tool",
+      "onit-chief-ai-office-recognition"
+    ]
+  },
+  {
+    "strength": "Problem Solving",
+    "evidence": [
+      "chrome-extension-internal-tool"
+    ]
+  },
+  {
+    "strength": "Developer Enablement",
+    "evidence": [
+      "aspnetzero-open-source-contribution"
+    ]
+  }
+]

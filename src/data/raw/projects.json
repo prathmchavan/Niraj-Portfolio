@@ -1,0 +1,257 @@
+[
+  {
+    "id": "chrome-extension-internal-tool",
+    "type": "project",
+    "title": "Internal Workflow Automation Chrome Extension",
+    "summary": "Developed an internal Chrome extension to streamline support workflows and automate OTT authentication across environments, significantly improving operational efficiency and reducing repetitive manual effort.",
+    "technologies": [
+      "JavaScript",
+      "Chrome Extension APIs",
+      "Salesforce",
+      "Web Scraping"
+    ],
+    "capabilities": [
+      "workflow automation",
+      "browser engineering",
+      "API orchestration",
+      "support optimization",
+      "authentication automation",
+      "constraint-based problem solving",
+      "operational efficiency"
+    ],
+    "domains": [
+      "enterprise tooling",
+      "support operations",
+      "internal productivity systems"
+    ],
+    "businessImpact": [
+      "Reduced login workflow time by approximately 93%",
+      "Saved around 5 minutes per environment batch",
+      "Improved support productivity through automation"
+    ],
+    "technicalChallenges": [
+      "Sideloading restrictions prevented direct extension execution",
+      "Identified alternate browser execution paths to perform required API calls",
+      "Worked within environment constraints to achieve automation goals"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "ownership",
+        "fast execution",
+        "adaptability",
+        "problem solving"
+      ],
+      "faang": [
+        "systems thinking",
+        "browser behavior understanding",
+        "technical troubleshooting"
+      ],
+      "solutions": [
+        "workflow optimization",
+        "support engineering",
+        "operational efficiency"
+      ],
+      "ai": [
+        "automation mindset",
+        "productivity engineering"
+      ],
+      "fullstack": [
+        "API integrations",
+        "frontend tooling",
+        "system interaction"
+      ]
+    },
+    "links": {
+      "github": "",
+      "live": "",
+      "reference": ""
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Workflow automation engineering using JavaScript Chrome extensions Salesforce integrations browser APIs authentication automation support tooling operational efficiency productivity engineering and constraint-based problem solving."
+  },
+  {
+    "id": "aspnetzero-open-source-contribution",
+    "type": "project",
+    "title": "ASP.NET Zero Open Source Contribution",
+    "summary": "Contributed to the ASP.NET Zero ecosystem by creating technical documentation for Angular-based application development workflows and was featured for the contribution.",
+    "technologies": [
+      ".NET",
+      "C#",
+      "Angular",
+      "ASP.NET Core",
+      "Entity Framework Core"
+    ],
+    "capabilities": [
+      "technical communication",
+      "developer documentation",
+      "framework understanding",
+      "open source contribution",
+      "developer enablement"
+    ],
+    "domains": [
+      "enterprise frameworks",
+      "developer tooling",
+      "web application architecture"
+    ],
+    "businessImpact": [
+      "Improved accessibility of framework workflows for developers",
+      "Contributed to a production-grade enterprise framework ecosystem"
+    ],
+    "technicalChallenges": [
+      "Understanding framework architecture and development workflow deeply enough to document clearly",
+      "Simplifying complex development processes into structured documentation"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "initiative",
+        "self learning",
+        "execution ownership"
+      ],
+      "faang": [
+        "developer ecosystem contribution",
+        "framework-level understanding",
+        "technical writing"
+      ],
+      "solutions": [
+        "technical enablement",
+        "clear communication",
+        "documentation quality"
+      ],
+      "ai": [
+        "knowledge sharing",
+        "developer productivity"
+      ],
+      "fullstack": [
+        "Angular architecture",
+        ".NET ecosystem",
+        "application development workflows"
+      ]
+    },
+    "links": {
+      "github": "",
+      "live": "",
+      "reference": "https://docs.aspnetzero.com/aspnet-core-angular/latest/Developing-Step-By-Step-Angular-Adding-New-Menu-Item"
+    },
+    "evidenceStrength": "medium",
+    "embeddingText": "Open source contribution involving ASP.NET Core Angular enterprise application architecture developer documentation framework understanding technical communication and developer enablement."
+  },
+  {
+    "id": "harshx-portfolio",
+    "type": "project",
+    "title": "HarshX Portfolio",
+    "summary": "Designed and developed a portfolio website for a cinematographer with a focus on visual presentation, responsive design, and modern frontend experience.",
+    "technologies": [
+      "Angular",
+      "TypeScript",
+      "Frontend Development"
+    ],
+    "capabilities": [
+      "frontend engineering",
+      "responsive design",
+      "UI implementation",
+      "client-oriented execution",
+      "visual presentation"
+    ],
+    "domains": [
+      "portfolio websites",
+      "creative industry",
+      "frontend applications"
+    ],
+    "businessImpact": [
+      "Created a professional digital presence for a cinematographer",
+      "Delivered a clean and visually engaging frontend experience"
+    ],
+    "technicalChallenges": [
+      "Balancing visual presentation with performance and responsiveness",
+      "Creating a clean user experience optimized for media presentation"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "rapid delivery",
+        "ownership",
+        "client execution"
+      ],
+      "faang": [
+        "frontend implementation",
+        "responsive UI engineering"
+      ],
+      "solutions": [
+        "stakeholder understanding",
+        "client-focused delivery"
+      ],
+      "ai": [
+        "creative tooling mindset"
+      ],
+      "fullstack": [
+        "Angular development",
+        "frontend architecture",
+        "responsive design"
+      ]
+    },
+    "links": {
+      "github": "",
+      "live": "https://harshxgallery.vercel.app/",
+      "reference": ""
+    },
+    "evidenceStrength": "medium",
+    "embeddingText": "Frontend engineering using Angular and TypeScript for responsive portfolio experiences client-focused delivery visual presentation and modern web application development."
+  },
+  {
+    "id": "onit-chief-ai-office-recognition",
+    "type": "achievement",
+    "title": "Chief AI Office Recognition",
+    "summary": "Recognized in the organization’s Chief AI Office initiative for sharing practical approaches to using AI tools for improving software engineering productivity, delivery efficiency, and problem solving.",
+    "technologies": [
+      "AI Tools",
+      "Developer Productivity"
+    ],
+    "capabilities": [
+      "AI productivity mindset",
+      "engineering optimization",
+      "knowledge sharing",
+      "problem solving",
+      "delivery efficiency"
+    ],
+    "domains": [
+      "AI engineering",
+      "developer productivity",
+      "software delivery"
+    ],
+    "businessImpact": [
+      "Promoted practical AI adoption within engineering workflows",
+      "Recognized publicly for AI productivity perspectives"
+    ],
+    "technicalChallenges": [
+      "Identifying practical and scalable AI usage approaches for engineering workflows"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "adaptability",
+        "innovation mindset"
+      ],
+      "faang": [
+        "engineering effectiveness",
+        "scalable productivity thinking"
+      ],
+      "solutions": [
+        "communication",
+        "practical implementation thinking"
+      ],
+      "ai": [
+        "AI adoption",
+        "AI workflow optimization",
+        "developer productivity"
+      ],
+      "fullstack": [
+        "engineering process improvement"
+      ]
+    },
+    "links": {
+      "github": "",
+      "live": "",
+      "reference": "https://www.linkedin.com/feed/update/urn:li:activity:7457664526411534336/"
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "AI productivity engineering workflow optimization software delivery efficiency developer effectiveness practical AI adoption and engineering problem solving."
+  }
+]

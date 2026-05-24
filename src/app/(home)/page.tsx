@@ -8,6 +8,8 @@ import {
   ResumeComp,
   Skills,
 } from "@/components";
+import Link from "next/link";
+import { Box as MuiBox } from "@mui/material";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 
@@ -66,6 +68,11 @@ export default function Home() {
           />
         </Box>
       </Box>
+      <MuiBox sx={{ position: 'fixed', right: 20, bottom: 36, zIndex: 40 }}>
+        <Link href="/ai-candidate-assistant">
+          <button className="floating-ai-btn">Go to AI assistance</button>
+        </Link>
+      </MuiBox>
     </Box>
   );
 }

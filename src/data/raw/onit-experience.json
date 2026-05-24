@@ -1,0 +1,41 @@
+{
+  "id": "Onit",
+
+  "metadata": {
+    "title": "Onit Solution Engineering",
+
+    "summary":
+      "Worked as Solution Engineer and promoted to Solution Engineer-II delivering enterprise SaaS solutions, workflow automation, and internal productivity tooling.",
+
+    "capabilities": [
+      "Solution Engineering",
+      "Workflow Automation",
+      "Enterprise SaaS",
+      "Frontend Engineering",
+      "System Integration",
+      "Client Solutions",
+      "React",
+      "Angular",
+      "TypeScript"
+    ],
+
+    "domains": [
+      "Legal Tech",
+      "Enterprise SaaS",
+      "Workflow Automation"
+    ],
+
+    "businessImpact": [
+      "Reduced login workflow time by 93%",
+      "Saved 8+ hours per month per user",
+      "Improved support turnaround time",
+      "Improved operational efficiency"
+    ],
+
+    "url":
+      "YOUR_LINKEDIN_URL",
+
+    "embeddingText":
+      "Niraj Chavan worked at Onit as a Solution Engineer and Solution Engineer-II delivering enterprise SaaS solutions, workflow automation systems, frontend engineering solutions, and internal productivity tooling. Built a Chrome extension automating OTT authentication workflows reducing login time by 93 percent and improving support efficiency."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "networcx-software-engineer",
+
+  "metadata": {
+    "title": "Networcx Full Stack Development Experience",
+
+    "summary":
+      "Built scalable full stack applications using .NET and Angular with REST API integrations and MSSQL.",
+
+    "capabilities": [
+      ".NET",
+      "Angular",
+      "REST APIs",
+      "MSSQL",
+      "Entity Framework",
+      "Frontend Engineering",
+      "Full Stack Development",
+      "API Integration"
+    ],
+
+    "domains": [
+      "Web Development",
+      "Enterprise Applications",
+      "Full Stack Engineering"
+    ],
+
+    "businessImpact": [
+      "Built scalable applications",
+      "Improved frontend usability",
+      "Enabled seamless integrations"
+    ],
+
+    "url":
+      "YOUR_PORTFOLIO_URL",
+
+    "embeddingText":
+      "Niraj worked at Networcx as a Software Developer building scalable web applications using .NET, Angular, REST APIs, Entity Framework, and MSSQL while focusing on frontend usability and system integrations."
+  }
+}

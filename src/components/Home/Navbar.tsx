@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Card, IconButton, Tooltip, Typography } from "@mui/material";
+import Link from "next/link";
 import { useState } from "react";
 import {
   Education,
@@ -93,6 +94,20 @@ export const Navbar = () => {
                 <Person />
               </IconButton>
             </Tooltip>
+            <Tooltip title="AI" arrow={true} placement="left">
+              <Link href="/ai-candidate-assistant">
+          <IconButton
+            sx={{
+              color: "#7c3aed",
+              border: "1px solid rgba(255,255,255,0.08)",
+              padding: "6px 10px",
+              ':hover': { backgroundColor: 'white', color: 'black' },
+            }}
+          >
+            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
+          </IconButton>
+        </Link>
+            </Tooltip>
             <Tooltip title="Experience" arrow={true} placement="left">
               <IconButton
                 sx={{
@@ -169,12 +184,28 @@ export const Navbar = () => {
             onMouseEnter={() => setTrayIn(true)}
             sx={{
               color: "white",
+              padding: "14px",
             }}
           >
-            <Hamburger width={15} height={15} />
+            <Hamburger width={26} height={26} />
           </IconButton>
         )}
       </Card>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, ml: 2 }}>
+        <Link href="/ai-candidate-assistant">
+          <IconButton
+            sx={{
+              color: "white",
+              border: "1px solid rgba(255,255,255,0.08)",
+              borderRadius: 1,
+              padding: "6px 10px",
+              ':hover': { backgroundColor: 'white', color: 'black' },
+            }}
+          >
+            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
+          </IconButton>
+        </Link>
+      </Box>
       <Box sx={{ mt: "45px" }}></Box>
     </Box>
   );

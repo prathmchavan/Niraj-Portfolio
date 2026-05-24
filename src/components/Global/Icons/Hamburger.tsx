@@ -4,11 +4,11 @@ export const Hamburger = ({height, width}: {height?: number, width?: number}) =>
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
+      strokeWidth={3}
       stroke="currentColor"
       style={{
-        width: width ?? 35,
-        height: height ?? 35
+        width: width ?? 42,
+        height: height ?? 42,
       }}
     >
       <path

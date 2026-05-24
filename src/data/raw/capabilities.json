@@ -1,0 +1,51 @@
+{
+  "frontend": [
+    "C#",
+    "Next.js",
+    "Angular",
+    "TypeScript",
+    "JavaScript",
+    "responsive design",
+    "frontend engineering",
+    "UI development"
+  ],
+
+  "backend": [
+    ".NET",
+    "ASP.NET Core",
+    "API integrations",
+    "Entity Framework",
+    "authentication",
+    "workflow automation"
+  ],
+
+  "ai": [
+    "AI productivity",
+    "automation mindset",
+    "LLM workflows",
+    "developer efficiency",
+    "AI adoption"
+  ],
+
+  "startup": [
+    "ownership",
+    "rapid execution",
+    "problem solving",
+    "adaptability",
+    "cross-functional work"
+  ],
+
+  "fullstack": [
+    "frontend architecture",
+    "API orchestration",
+    "system integration",
+    "browser engineering"
+  ],
+
+  "enterprise": [
+    "support tooling",
+    "developer documentation",
+    "enterprise workflows",
+    "operational efficiency"
+  ]
+}
