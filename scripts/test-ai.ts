@@ -1,5 +1,6 @@
 import { retrieveRelevantKnowledge } from "../src/lib/rag/retrieve";
-import { generateRecruiterResponse } from "../src/lib/ai/generate";
+import { streamRecruiterResponse } from "../src/lib/ai/generate";
+import { calculateConfidence } from "../src/lib/recruiter/confidence";
 
 async function main() {
   const recruiterQuestion =
@@ -11,15 +12,82 @@ async function main() {
       4
     );
 
-  const response =
-    await generateRecruiterResponse(
-      recruiterQuestion,
+  const confidence =
+    calculateConfidence(
       evidence
     );
 
-  console.log("\n=== AI RESPONSE ===\n");
+  const stream =
+    await streamRecruiterResponse(
+      recruiterQuestion,
+      evidence,
+      confidence
+    );
 
-  console.log(response);
+  if (!stream) {
+    console.log(
+      "No response stream returned."
+    );
+
+    return;
+  }
+
+  const reader =
+    stream.getReader();
+
+  const decoder =
+    new TextDecoder();
+
+  let fullResponse = "";
+
+  while (true) {
+    const { done, value } =
+      await reader.read();
+
+    if (done) break;
+
+    const chunk =
+      decoder.decode(value);
+
+    const lines = chunk
+      .split("\n")
+      .filter(Boolean);
+
+    for (const line of lines) {
+      try {
+        const parsed =
+          JSON.parse(line);
+
+        if (parsed.response) {
+          fullResponse +=
+            parsed.response;
+        }
+      } catch (error) {
+        console.error(
+          "Parse error:",
+          error
+        );
+      }
+    }
+  }
+
+  console.log(
+    "\n=== AI RESPONSE ===\n"
+  );
+
+  console.log(fullResponse);
+
+  console.log(
+    "\n=== EVIDENCE ===\n"
+  );
+
+  console.log(evidence);
+
+  console.log(
+    "\n=== CONFIDENCE ===\n"
+  );
+
+  console.log(`${confidence}%`);
 }
 
 main();
