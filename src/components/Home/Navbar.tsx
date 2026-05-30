@@ -63,21 +63,32 @@ export const Navbar = () => {
       </Typography>
       <Card
         sx={{
-          height: "100%",
-          display: ["none", "flex"],
+          position: "relative",
+          height: ["auto", "100%"],
+          display: ["flex", "flex"],
+          flexDirection: ["row", "column"],
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "none",
           backgroundColor: "black",
+          px: [1, 0],
+          py: [0.5, 0],
         }}
-        onMouseLeave={() => setTrayIn(false)}
       >
         {trayIn ? (
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
-              gap: "12px",
+              gap: "10px",
+              position: ["absolute", "static"],
+              top: ["100%", "auto"],
+              right: 0,
+              mt: [1, 0],
+              backgroundColor: "rgba(0,0,0,0.95)",
+              borderRadius: "16px",
+              p: [1, 0],
+              zIndex: 30,
             }}
           >
             <Tooltip title="Profile" arrow={true} placement="left">
@@ -89,24 +100,28 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("profile")} //to scroll to the profile section
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("profile");
+                }}
               >
                 <Person />
               </IconButton>
             </Tooltip>
             <Tooltip title="AI" arrow={true} placement="left">
               <Link href="/ai-candidate-assistant">
-          <IconButton
-            sx={{
-              color: "#7c3aed",
-              border: "1px solid rgba(255,255,255,0.08)",
-              padding: "6px 10px",
-              ':hover': { backgroundColor: 'white', color: 'black' },
-            }}
-          >
-            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
-          </IconButton>
-        </Link>
+                <IconButton
+                  sx={{
+                    color: "#7c3aed",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    padding: "6px 10px",
+                    ":hover": { backgroundColor: "white", color: "black" },
+                  }}
+                  onClick={() => setTrayIn(false)}
+                >
+                  <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
+                </IconButton>
+              </Link>
             </Tooltip>
             <Tooltip title="Experience" arrow={true} placement="left">
               <IconButton
@@ -117,7 +132,10 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("experience")}
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("experience");
+                }}
               >
                 <Experience />
               </IconButton>
@@ -131,7 +149,10 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("education")}
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("education");
+                }}
               >
                 <Education />
               </IconButton>
@@ -145,7 +166,10 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("skills")}
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("skills");
+                }}
               >
                 <Tools />
               </IconButton>
@@ -159,7 +183,10 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("experiments")}
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("experiments");
+                }}
               >
                 <Experiments />
               </IconButton>
@@ -173,7 +200,10 @@ export const Navbar = () => {
                     color: "black",
                   },
                 }}
-                onClick={() => handleScroll("resume")}
+                onClick={() => {
+                  setTrayIn(false);
+                  handleScroll("resume");
+                }}
               >
                 <Resume />
               </IconButton>
@@ -182,6 +212,7 @@ export const Navbar = () => {
         ) : (
           <IconButton
             onMouseEnter={() => setTrayIn(true)}
+            onClick={() => setTrayIn((open) => !open)}
             sx={{
               color: "white",
               padding: "14px",

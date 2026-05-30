@@ -19,10 +19,11 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        maxWidth: "200vw",
+        width: "100%",
         overflowX: "hidden",
-        backgroundColor:"black",
-        color :'white'
+        minHeight: "100vh",
+        backgroundColor: "black",
+        color: "white",
       }}
     >
       <Navbar />
@@ -47,20 +48,22 @@ export default function Home() {
       <Box
         sx={{
           position: "fixed",
-              right: 0,
-              bottom: 0,
+          right: [10, 18],
+          bottom: [22, 28],
+          pointerEvents: "none",
+          zIndex: 20,
         }}
       >
         <Box
           sx={{
             position: "relative",
-            width: [120, 200],
-            height: [160, 280]
+            width: [120, 170, 210],
+            height: [150, 210, 270],
           }}
         >
           <Image
-            src={"/home/pngwinc.png"}
-            alt={"Nemo"}
+            src="/home/pngwinc.png"
+            alt="Nemo"
             fill
             style={{
               objectFit: "cover",
@@ -68,7 +71,7 @@ export default function Home() {
           />
         </Box>
       </Box>
-      <MuiBox sx={{ position: 'fixed', right: 20, bottom: 36, zIndex: 40 }}>
+      <MuiBox sx={{ position: 'fixed', right: [12, 20], bottom: [8, 16], zIndex: 40 }}>
         <Link href="/ai-candidate-assistant">
           <button className="floating-ai-btn">Go to AI assistance</button>
         </Link>
