@@ -1,0 +1,128 @@
+[
+  {
+    "id": "onit-chief-ai-office-recognition",
+    "type": "achievement",
+    "title": "Chief AI Office Recognition",
+    "summary": "Recognized internally for sharing practical AI productivity approaches improving software engineering efficiency and workflow optimization.",
+    "technologies": [
+      "AI Tools",
+      "Developer Productivity"
+    ],
+    "capabilities": [
+      "AI productivity",
+      "engineering optimization",
+      "workflow improvement",
+      "knowledge sharing",
+      "problem solving"
+    ],
+    "domains": [
+      "AI engineering",
+      "developer productivity"
+    ],
+    "businessImpact": [
+      "Promoted practical AI adoption",
+      "Improved engineering productivity awareness"
+    ],
+    "technicalChallenges": [
+      "Identifying scalable AI workflow improvements"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "innovation mindset",
+        "adaptability"
+      ],
+      "faang": [
+        "engineering effectiveness"
+      ],
+      "ai": [
+        "AI workflow optimization",
+        "AI adoption"
+      ]
+    },
+    "links": {
+      "reference": "https://www.linkedin.com/feed/update/urn:li:activity:7457664526411534336/"
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Recognized for AI productivity engineering, workflow optimization, developer efficiency, engineering effectiveness, and practical AI adoption."
+  },
+  {
+    "id": "promotion-solution-engineer-2",
+    "type": "achievement",
+    "title": "Promotion to Solution Engineer II",
+    "summary": "Promoted from Solution Engineer to Solution Engineer II based on engineering contributions, workflow optimization work, and operational impact.",
+    "technologies": [
+      "Enterprise SaaS",
+      "Workflow Automation"
+    ],
+    "capabilities": [
+      "ownership",
+      "execution",
+      "problem solving",
+      "delivery consistency"
+    ],
+    "domains": [
+      "enterprise engineering",
+      "solution engineering"
+    ],
+    "businessImpact": [
+      "Recognized for operational impact",
+      "Demonstrated consistent execution"
+    ],
+    "technicalChallenges": [
+      "Managing complex enterprise workflows"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "ownership",
+        "execution"
+      ],
+      "faang": [
+        "engineering impact"
+      ]
+    },
+    "links": {},
+    "evidenceStrength": "high",
+    "embeddingText": "Promoted to Solution Engineer II after demonstrating ownership, workflow optimization, engineering execution, and operational efficiency improvements."
+  },
+  {
+    "id": "aspnetzero-featured-contribution",
+    "type": "achievement",
+    "title": "ASP.NET Zero Featured Contribution",
+    "summary": "Created official Angular workflow documentation for ASP.NET Zero and was featured for the contribution.",
+    "technologies": [
+      ".NET",
+      "Angular",
+      "ASP.NET Core"
+    ],
+    "capabilities": [
+      "technical writing",
+      "developer enablement",
+      "framework understanding",
+      "documentation"
+    ],
+    "domains": [
+      "developer tooling",
+      "enterprise frameworks"
+    ],
+    "businessImpact": [
+      "Improved developer onboarding experience"
+    ],
+    "technicalChallenges": [
+      "Simplifying framework-level complexity"
+    ],
+    "roleAlignment": {
+      "faang": [
+        "developer ecosystem contribution",
+        "technical communication"
+      ],
+      "solutions": [
+        "knowledge sharing"
+      ]
+    },
+    "links": {
+      "reference": "https://docs.aspnetzero.com/aspnet-core-angular/latest/Developing-Step-By-Step-Angular-Adding-New-Menu-Item"
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Featured ASP.NET Zero contribution involving Angular, enterprise frameworks, technical documentation, developer enablement, and framework-level engineering understanding."
+  }
+]

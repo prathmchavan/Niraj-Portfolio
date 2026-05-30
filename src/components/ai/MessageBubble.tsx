@@ -57,12 +57,7 @@ export default function MessageBubble({
                     </p>
 
                     <p className="evidence-score">
-                      Relevance:{" "}
-                      {Math.round(
-                        item.score *
-                          100
-                      )}
-                      %
+                      Relevance: {Math.min(Math.round(item.score * 100), 100)}%
                     </p>
                   </div>
                 )

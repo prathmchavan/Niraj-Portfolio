@@ -2,7 +2,7 @@ export function calculateConfidence(
   evidence: any[]
 ) {
   if (!evidence.length) {
-    return 40;
+    return 45;
   }
 
   const avg =
@@ -14,8 +14,11 @@ export function calculateConfidence(
 
   const normalized =
     Math.min(
-      95,
-      Math.round(avg * 120)
+      98,
+      Math.max(
+        65,
+        Math.round(avg * 100)
+      )
     );
 
   return normalized;

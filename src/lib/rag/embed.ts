@@ -1,9 +1,13 @@
-import { pipeline } from "@xenova/transformers";
-
 let extractor: any = null;
 
-export async function generateEmbedding(text: string) {
+export async function generateEmbedding(
+  text: string
+) {
   if (!extractor) {
+    const { pipeline } = await import(
+      "@xenova/transformers"
+    );
+
     extractor = await pipeline(
       "feature-extraction",
       "Xenova/all-MiniLM-L6-v2"
@@ -15,5 +19,7 @@ export async function generateEmbedding(text: string) {
     normalize: true,
   });
 
-  return Array.from(output.data);
+  return Array.from(
+    output.data
+  ) as number[];
 }

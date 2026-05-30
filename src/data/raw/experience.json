@@ -1,0 +1,196 @@
+[
+  {
+    "id": "onit-solution-engineer",
+    "type": "experience",
+    "title": "Onit - Solution Engineer / Solution Engineer II",
+    "company": "Onit",
+    "duration": "2022 - Present",
+    "summary": "Worked on enterprise SaaS platforms, workflow automation systems, frontend engineering, and internal productivity tooling while supporting large-scale legal tech workflows.",
+    "technologies": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Salesforce",
+      "Chrome Extension APIs",
+      "REST APIs",
+      "AI Tools"
+    ],
+    "capabilities": [
+      "solution engineering",
+      "workflow automation",
+      "frontend engineering",
+      "enterprise SaaS",
+      "support optimization",
+      "system integration",
+      "AI productivity",
+      "developer efficiency",
+      "browser engineering"
+    ],
+    "domains": [
+      "legal tech",
+      "enterprise SaaS",
+      "workflow automation",
+      "support engineering"
+    ],
+    "businessImpact": [
+      "Reduced login workflow time by approximately 93%",
+      "Saved hours of repetitive operational effort",
+      "Improved support workflow efficiency",
+      "Improved internal tooling productivity"
+    ],
+    "technicalChallenges": [
+      "Worked around browser execution restrictions",
+      "Built automation within enterprise security constraints",
+      "Handled workflow complexity across multiple environments"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "ownership",
+        "fast execution",
+        "adaptability",
+        "problem solving"
+      ],
+      "faang": [
+        "systems thinking",
+        "technical troubleshooting",
+        "workflow optimization"
+      ],
+      "solutions": [
+        "client enablement",
+        "operational efficiency",
+        "technical support engineering"
+      ],
+      "ai": [
+        "AI productivity",
+        "engineering optimization"
+      ],
+      "fullstack": [
+        "frontend tooling",
+        "API integration",
+        "system interaction"
+      ]
+    },
+    "links": {
+      "linkedin": "https://www.onit.com/"
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Niraj Chavan worked at Onit as Solution Engineer and Solution Engineer II building enterprise SaaS solutions, workflow automation systems, frontend engineering tooling, support optimization systems, browser automation, AI productivity workflows, and operational efficiency tooling."
+  },
+  {
+    "id": "networcx-software-developer",
+    "type": "experience",
+    "title": "Networcx - Software Developer",
+    "company": "Networcx",
+    "duration": "2021 - 2022",
+    "summary": "Built scalable enterprise web applications using .NET and Angular while working on frontend usability, API integrations, and MSSQL-backed systems.",
+    "technologies": [
+      ".NET",
+      "C#",
+      "Angular",
+      "TypeScript",
+      "Entity Framework",
+      "MSSQL",
+      "REST APIs"
+    ],
+    "capabilities": [
+      "full stack engineering",
+      "frontend engineering",
+      "backend engineering",
+      "API integrations",
+      "enterprise applications",
+      "database integration"
+    ],
+    "domains": [
+      "enterprise applications",
+      "web development",
+      "full stack engineering"
+    ],
+    "businessImpact": [
+      "Built scalable enterprise applications",
+      "Improved frontend usability",
+      "Enabled seamless backend integrations"
+    ],
+    "technicalChallenges": [
+      "Coordinating frontend and backend architecture",
+      "Managing API integration complexity",
+      "Maintaining scalable enterprise workflows"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "rapid execution",
+        "ownership"
+      ],
+      "faang": [
+        "architecture understanding",
+        "system scalability"
+      ],
+      "solutions": [
+        "stakeholder delivery",
+        "integration engineering"
+      ],
+      "fullstack": [
+        "Angular",
+        ".NET",
+        "REST APIs",
+        "MSSQL"
+      ]
+    },
+    "links": {
+      "linkedin": "https://networcx.io/"
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Niraj worked at Networcx as Software Developer building scalable web applications using .NET, Angular, REST APIs, MSSQL, Entity Framework, and frontend engineering best practices."
+  },
+  {
+    "id": "iaastha-junior-developer",
+    "type": "experience",
+    "title": "iAastha Technologies - Junior Developer",
+    "company": "iAastha Technologies",
+    "duration": "2020 - 2021",
+    "summary": "Built Python data processing pipelines and backend integration services supporting scalable workflows and API integrations.",
+    "technologies": [
+      "Python",
+      "Node.js",
+      "REST APIs"
+    ],
+    "capabilities": [
+      "backend engineering",
+      "data processing",
+      "API services",
+      "integration engineering"
+    ],
+    "domains": [
+      "backend systems",
+      "data engineering"
+    ],
+    "businessImpact": [
+      "Improved data workflow handling",
+      "Enabled backend integrations"
+    ],
+    "technicalChallenges": [
+      "Handling large-scale data processing",
+      "Maintaining scalable backend workflows"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "adaptability",
+        "learning speed"
+      ],
+      "faang": [
+        "backend systems understanding"
+      ],
+      "solutions": [
+        "integration support"
+      ],
+      "fullstack": [
+        "backend APIs",
+        "data pipelines"
+      ]
+    },
+    "links": {
+      "linkedin": "https://iaastha.com/home"
+    },
+    "evidenceStrength": "medium",
+    "embeddingText": "Niraj worked at iAastha Technologies building Python data processing pipelines, backend services, Node.js integrations, and scalable API workflows."
+  }
+]
