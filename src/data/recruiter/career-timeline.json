@@ -1,0 +1,106 @@
+[
+  {
+    "id": "onit-solution-engineering",
+    "company": "Onit",
+    "role": "Solution Engineer-II",
+    "duration": "Current",
+    "summary": "Worked on enterprise SaaS solutions, workflow automation, internal tooling, frontend engineering, and operational productivity improvements within legal-tech environments.",
+    "responsibilities": [
+      "Built workflow automation tooling",
+      "Improved operational efficiency for support teams",
+      "Developed frontend engineering solutions using Angular and TypeScript",
+      "Worked on enterprise SaaS workflows and integrations",
+      "Collaborated cross-functionally with engineering and support teams",
+      "Implemented internal productivity improvements"
+    ],
+    "technologies": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      ".NET",
+      "C#",
+      "Salesforce",
+      "Chrome Extension APIs"
+    ],
+    "businessImpact": [
+      "Reduced workflow login time by 93%",
+      "Improved support turnaround efficiency",
+      "Automated repetitive operational tasks",
+      "Enabled faster troubleshooting workflows"
+    ],
+    "strengthSignals": [
+      "ownership",
+      "enterprise engineering",
+      "workflow optimization",
+      "cross-functional collaboration",
+      "problem solving",
+      "support engineering"
+    ],
+    "embeddingText": "Niraj worked at Onit as a Solution Engineer and Solution Engineer-II delivering enterprise SaaS solutions, workflow automation systems, frontend engineering applications, support tooling, operational productivity improvements, and cross-functional technical solutions using Angular, TypeScript, JavaScript, .NET, Salesforce, and automation engineering."
+  },
+  {
+    "id": "networcx-fullstack-engineer",
+    "company": "Networcx",
+    "role": "Software Developer",
+    "duration": "Previous",
+    "summary": "Built scalable full-stack applications using .NET, Angular, REST APIs, and MSSQL with strong focus on frontend usability and enterprise integrations.",
+    "responsibilities": [
+      "Developed full-stack enterprise applications",
+      "Built REST API integrations",
+      "Worked with MSSQL and Entity Framework",
+      "Implemented frontend UI systems using Angular",
+      "Maintained scalable business applications"
+    ],
+    "technologies": [
+      ".NET",
+      "C#",
+      "Angular",
+      "MSSQL",
+      "REST APIs",
+      "Entity Framework"
+    ],
+    "businessImpact": [
+      "Improved frontend usability",
+      "Built scalable engineering solutions",
+      "Enabled business workflow integrations"
+    ],
+    "strengthSignals": [
+      "fullstack engineering",
+      "backend development",
+      "frontend architecture",
+      "API integrations",
+      "enterprise systems"
+    ],
+    "embeddingText": "Niraj worked at Networcx as a Software Developer building scalable full-stack enterprise applications using .NET, Angular, C#, REST APIs, MSSQL, and Entity Framework with strong frontend engineering and backend integration experience."
+  },
+  {
+    "id": "iaastha-backend-engineering",
+    "company": "iAastha Technologies",
+    "role": "Junior Developer",
+    "duration": "Early Career",
+    "summary": "Worked on backend engineering systems, Python data processing pipelines, and Node.js integration services supporting scalable workflows.",
+    "responsibilities": [
+      "Built backend processing systems",
+      "Worked on API integration services",
+      "Developed Python-based data workflows",
+      "Supported scalable backend operations"
+    ],
+    "technologies": [
+      "Python",
+      "Node.js",
+      "APIs",
+      "Backend Engineering"
+    ],
+    "businessImpact": [
+      "Improved data workflow handling",
+      "Enabled backend integrations"
+    ],
+    "strengthSignals": [
+      "backend engineering",
+      "problem solving",
+      "system integration",
+      "engineering foundations"
+    ],
+    "embeddingText": "Niraj worked at iAastha Technologies building backend engineering systems, Python data processing pipelines, API services, and Node.js integrations supporting scalable workflows and backend operational systems."
+  }
+]

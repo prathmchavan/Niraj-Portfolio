@@ -8,16 +8,7 @@ export default function EvidenceCard({
   const metadata =
     evidence.metadata || {};
 
-  const confidence =
-    evidence.score
-      ? Math.min(
-  Math.round(
-    (evidence.score / 10) *
-      100
-  ),
-  98
-)
-      : metadata.confidence || 0;
+  const confidence = evidence.score ? Math.min( Math.round( evidence.score * 100 ), 98 ) : metadata.confidence || 0;
 
   return (
     <div className="evidence-card">

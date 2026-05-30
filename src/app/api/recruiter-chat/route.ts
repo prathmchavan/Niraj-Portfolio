@@ -100,7 +100,7 @@ export async function POST(
     const evidence =
       await retrieveRelevantKnowledge(
         message,
-        4
+        7
       );
 
     const confidence =

@@ -233,7 +233,7 @@ export default function AICandidateAssistantPage() {
           <div ref={messagesEndRef} />
         </div>
 
-        {evidence.length > 0 && (
+        {/* {evidence.length > 0 && (
           <div className="evidence-section">
             <h3>Supporting Evidence</h3>
             <div className="evidence-grid">
@@ -242,7 +242,7 @@ export default function AICandidateAssistantPage() {
               ))}
             </div>
           </div>
-        )}
+        )} */}
 
         {!loading && (
           <SuggestedQuestions onSelect={(question) => setMessage(question)} />

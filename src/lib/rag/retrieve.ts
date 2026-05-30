@@ -1,79 +1,241 @@
 import fs from "fs";
 import path from "path";
 
-function scoreTextMatch(
+import { generateEmbedding } from "./embed";
+import { cosineSimilarity } from "./cosine";
+
+type KnowledgeItem = {
+  id: string;
+  type: string;
+  embedding: number[];
+  metadata: any;
+};
+
+function keywordScore(
   query: string,
   text: string
 ) {
-  const queryWords = query
-    .toLowerCase()
-    .split(" ");
+  const queryWords =
+    query
+      .toLowerCase()
+      .split(/\s+/);
 
-  const textLower = text.toLowerCase();
+  const textLower =
+    text.toLowerCase();
 
   let score = 0;
 
   for (const word of queryWords) {
-    if (textLower.includes(word)) {
-      score += 3;
+    if (
+      word.length < 3
+    ) {
+      continue;
+    }
+
+    if (
+      textLower.includes(word)
+    ) {
+      score += 0.12;
     }
   }
 
   return score;
 }
 
+function typeBoost(
+  type: string
+) {
+  switch (type) {
+    case "experience":
+      return 0.6;
+
+    case "achievement":
+      return 0.25;
+
+    case "project":
+      return 0.2;
+
+    default:
+      return 0;
+  }
+}
+
+function businessImpactBoost(
+  metadata: any
+) {
+  if (
+    metadata.businessImpact
+      ?.length
+  ) {
+    return 0.15;
+  }
+
+  return 0;
+}
+
+function recruiterIntentBoost(
+  query: string,
+  metadata: any
+) {
+  const lower =
+    query.toLowerCase();
+
+  let boost = 0;
+
+  // Enterprise questions
+  if (
+    lower.includes(
+      "experience"
+    ) ||
+    lower.includes(
+      "professional"
+    ) ||
+    lower.includes(
+      "worked"
+    )
+  ) {
+    if (
+      metadata.company
+    ) {
+      boost += 0.35;
+    }
+  }
+
+  // Startup questions
+  if (
+    lower.includes(
+      "startup"
+    )
+  ) {
+    if (
+      metadata.strengthSignals?.includes(
+        "ownership"
+      )
+    ) {
+      boost += 0.25;
+    }
+  }
+
+  // AI questions
+  if (
+    lower.includes("ai")
+  ) {
+    if (
+      metadata.capabilities?.some(
+        (c: string) =>
+          c
+            .toLowerCase()
+            .includes("ai")
+      )
+    ) {
+      boost += 0.25;
+    }
+  }
+
+  return boost;
+}
+
 export async function retrieveRelevantKnowledge(
   query: string,
-  topK: number = 5
+  topK: number = 6
 ) {
-  const knowledgePath = path.join(
-    process.cwd(),
-    "src/data/embeddings/knowledge.json"
-  );
+  const knowledgePath =
+    path.join(
+      process.cwd(),
+      "src/data/embeddings/knowledge.json"
+    );
 
   const rawKnowledge =
-    fs.readFileSync(knowledgePath, "utf-8");
+    fs.readFileSync(
+      knowledgePath,
+      "utf-8"
+    );
 
-  const knowledge = JSON.parse(rawKnowledge);
+  const knowledge: KnowledgeItem[] =
+    JSON.parse(rawKnowledge);
 
-  const scoredResults = knowledge.map(
-    (item: any) => {
-      const combinedText = `
-  ${item.metadata.title || ""}
-  ${item.metadata.summary || ""}
+  const queryEmbedding =
+    (await generateEmbedding(
+      query
+    )) as number[];
 
-  ${(item.metadata.capabilities || []).join(" ")}
+  const scoredResults =
+    knowledge.map((item) => {
+      const semanticScore =
+        cosineSimilarity(
+          queryEmbedding,
+          item.embedding
+        );
 
-  ${(item.metadata.domains || []).join(" ")}
+      const searchableText = `
+        ${item.metadata.title || ""}
+        ${item.metadata.summary || ""}
+        ${item.metadata.company || ""}
+        ${item.metadata.role || ""}
+        ${(item.metadata.capabilities || []).join(
+          " "
+        )}
+        ${(item.metadata.technologies || []).join(
+          " "
+        )}
+        ${(item.metadata.domains || []).join(
+          " "
+        )}
+        ${(item.metadata.businessImpact || []).join(
+          " "
+        )}
+      `;
 
-  ${(item.metadata.businessImpact || []).join(" ")}
+      const keywordBoost =
+        keywordScore(
+          query,
+          searchableText
+        );
 
-  ${(item.metadata.technicalChallenges || []).join(" ")}
+      const importanceBoost =
+        typeBoost(
+          item.type
+        );
 
-  ${JSON.stringify(
-    item.metadata.roleAlignment || {}
-  )}
+      const impactBoost =
+        businessImpactBoost(
+          item.metadata
+        );
 
-  ${(item.metadata.technologies || []).join(" ")}
+      const intentBoost =
+        recruiterIntentBoost(
+          query,
+          item.metadata
+        );
 
-  ${item.metadata.embeddingText || ""}
-`;
-
-      const score = scoreTextMatch(
-        query,
-        combinedText
-      );
+      const finalScore =
+        semanticScore * 0.65 +
+        keywordBoost +
+        importanceBoost +
+        impactBoost +
+        intentBoost;
 
       return {
-        score,
-        metadata: item.metadata,
+        score: finalScore,
+        semanticScore,
+        keywordBoost,
+        importanceBoost,
+        impactBoost,
+        intentBoost,
+        metadata:
+          item.metadata,
+        type: item.type,
       };
-    }
-  );
+    });
 
-  const ranked = scoredResults.sort(
-    (a: any, b: any) => b.score - a.score
-  );
+  const ranked =
+    scoredResults.sort(
+      (a, b) =>
+        b.score - a.score
+    );
 
-  return ranked.slice(0, topK);
+  return ranked.slice(
+    0,
+    topK
+  );
 }
