@@ -57,11 +57,11 @@ export const Main = () => {
             mb: "20px",
             textAlign: "center",
             fontSize: ["1rem", "1.125rem"],
-            maxWidth: ["90vw", "700px"],
+            maxWidth: ["90vw", "800px"],
             lineHeight: 1.6,
           }}
         >
-          Fullstack Engineer | AI-Driven Developer | Solution Engineer | Automation Builder | Frontend Specialist | AI Productivity Advocate
+          Senior Solutions Engineer | Enterprise SaaS | Workflow Automation | Fullstack Engineer | AI Solutions Builder | Frontend Specialist | AI-Driven Developer 
         </Typography>
         <Box
           sx={{
@@ -95,7 +95,7 @@ export const Main = () => {
                 transition: "transform 0.18s ease, box-shadow 0.18s ease",
                 width: ["100%", "auto"],
                 maxWidth: 340,
-                px: [2.5, 4],
+                px: [2.5],
                 py: 1.5,
               }}
             >
