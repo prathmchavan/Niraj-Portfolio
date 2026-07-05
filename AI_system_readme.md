@@ -466,3 +466,7 @@ NEXT -
 2. Record the asked qestions and save them.
 3. Get the info of user how is asking the questions.
 4. Remove Supporting Evidence and add the URL.
+5. Add redirect code.
+6. Make the Textarea smaller
+
+Senior Solutions Engineer | Enterprise SaaS | Workflow Automation | AI Solutions Builder

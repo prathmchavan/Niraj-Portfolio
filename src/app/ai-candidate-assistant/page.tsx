@@ -34,11 +34,42 @@ export default function AICandidateAssistantPage() {
   ]);
   const [evidence, setEvidence] = useState<any[]>([]);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+  const [showTopButton, setShowTopButton] = useState(false);
 
   // Scroll to bottom whenever messages update
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  // Resize textarea to fit content but cap at 100px
+  const resizeTextarea = () => {
+    const ta = textareaRef.current;
+    if (!ta) return;
+
+    ta.style.height = "auto";
+    const newHeight = Math.min(ta.scrollHeight, 100);
+    ta.style.height = `${newHeight}px`;
+  };
+
+  useEffect(() => {
+    // Whenever message changes (including programmatic changes), adjust height
+    resizeTextarea();
+  }, [message]);
+
+  // Show a back-to-top button when scrolled more than 1000px
+  useEffect(() => {
+    const onScroll = () => {
+      setShowTopButton(window.scrollY > 1000);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    // initialize
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   async function handleSend() {
   if (!message.trim()) return;
@@ -211,7 +242,7 @@ export default function AICandidateAssistantPage() {
       <div className="ai-container">
         <div className="ai-header">
           <Link href="/">
-            <button className="ai-back-button">← Back to Portfolio</button>
+            <button className="ai-back-button">←See Portfolio</button>
           </Link>
           <p className="ai-label">Candidate Assistant</p>
           <h1>Talk to an AI version of Niraj</h1>
@@ -250,16 +281,15 @@ export default function AICandidateAssistantPage() {
 
         <div className="ai-chat-box">
           <textarea
-          onKeyDown={(e) => {
-    if (
-      e.key === "Enter" &&
-      !e.shiftKey
-    ) {
-      e.preventDefault();
+            ref={textareaRef}
+            onInput={resizeTextarea}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
 
-      handleSend();
-    }
-  }}
+                handleSend();
+              }
+            }}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Ask recruiter-style questions or paste a job description..."
@@ -268,6 +298,19 @@ export default function AICandidateAssistantPage() {
             {loading ? "Thinking..." : "Send"}
           </button>
         </div>
+        <button
+          className={`back-to-top ${showTopButton ? "visible" : ""}`}
+          onClick={() =>
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          }
+          aria-label="Scroll to top"
+          title="Back to top"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M12 5L12 19" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M5 12L12 5L19 12" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
       </div>
     </main>
   );
