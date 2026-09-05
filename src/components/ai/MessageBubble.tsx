@@ -19,7 +19,10 @@ export default function MessageBubble({
     let match: RegExpExecArray | null;
 
     while ((match = urlRegex.exec(text))) {
-      const url = match[0];
+      const url = match[0].replace(
+        /[)\]}>,.!?;:]+$/g,
+        ""
+      );
       const idx = match.index;
 
       if (idx > lastIndex) {
