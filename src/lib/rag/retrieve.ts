@@ -234,8 +234,49 @@ export async function retrieveRelevantKnowledge(
         b.score - a.score
     );
 
-  return ranked.slice(
+  const rankedResults = ranked.slice(
     0,
     topK
   );
+
+  const isAiQuestion =
+    /\b(ai|artificial intelligence)\b/i.test(
+      query
+    );
+
+  const topResults = isAiQuestion
+    ? rankedResults.filter((item) =>
+        item.metadata.title
+          ?.toLowerCase()
+          .includes("ai")
+      )
+    : rankedResults;
+
+  const resultsToFilter =
+    topResults.length > 0
+      ? topResults
+      : rankedResults;
+
+  const strongestSemanticScore =
+    resultsToFilter[0]?.semanticScore || 0;
+
+  const relevantResults = resultsToFilter
+    .filter((item) =>
+      item.keywordBoost > 0 ||
+      item.semanticScore >=
+        Math.max(
+          0.16,
+          strongestSemanticScore * 0.65
+        )
+    )
+    .filter((item, index, results) =>
+      results.findIndex(
+        (candidate) =>
+          candidate.metadata.title ===
+          item.metadata.title
+      ) === index
+    )
+    .slice(0, 3);
+
+  return relevantResults;
 }
