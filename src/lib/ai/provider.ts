@@ -77,7 +77,7 @@ export async function generateAIResponse(
 
         body: JSON.stringify({
           model:
-            "llama-3.3-70b-versatile",
+            "openai/gpt-oss-120b",
 
           messages: [
             {
@@ -95,6 +95,12 @@ export async function generateAIResponse(
 
     const data =
       await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        `AI request failed: ${data.error?.message || response.statusText}`
+      );
+    }
 
     console.log(
       "GROQ RESPONSE:",
