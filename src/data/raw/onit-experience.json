@@ -2,40 +2,41 @@
   "id": "Onit",
 
   "metadata": {
-    "title": "Onit Solution Engineering",
+    "title": "Onit Solution Engineering - Current Employer",
 
     "summary":
-      "Worked as Solution Engineer and promoted to Solution Engineer-II delivering enterprise SaaS solutions, workflow automation, and internal productivity tooling.",
+      "CURRENT employer. Solution Engineer (Aug 2024 - Dec 2025) promoted to Solution Engineer-II (Dec 2025 - present). Owns end-to-end enterprise SaaS solution delivery for clients including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
 
     "capabilities": [
       "Solution Engineering",
+      "Solution Design",
       "Workflow Automation",
       "Enterprise SaaS",
-      "Frontend Engineering",
       "System Integration",
       "Client Solutions",
-      "React",
+      "Stakeholder Management",
+      "Requirement Discovery",
       "Angular",
       "TypeScript"
     ],
 
     "domains": [
-      "Legal Tech",
       "Enterprise SaaS",
-      "Workflow Automation"
+      "Workflow Automation",
+      "Document Automation"
     ],
 
     "businessImpact": [
       "Reduced login workflow time by 93%",
       "Saved 8+ hours per month per user",
       "Improved support turnaround time",
-      "Improved operational efficiency"
+      "Improved client adoption and retention"
     ],
 
     "url":
       "https://www.onit.com/",
 
     "embeddingText":
-      "Niraj Chavan worked at Onit as a Solution Engineer and Solution Engineer-II delivering enterprise SaaS solutions, workflow automation systems, frontend engineering solutions, and internal productivity tooling. Built a Chrome extension automating OTT authentication workflows reducing login time by 93 percent and improving support efficiency."
+      "Niraj is currently working at Onit as Solution Engineer-II. Current employer Onit. Career path: iAastha then Networcx then currently Onit."
   }
 }

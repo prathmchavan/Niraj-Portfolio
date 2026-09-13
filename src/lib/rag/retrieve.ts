@@ -73,6 +73,40 @@ function businessImpactBoost(
   return 0;
 }
 
+function isCurrentEmployerQuery(
+  query: string
+) {
+  const lower = query.toLowerCase();
+
+  return (
+    lower.includes("currently") ||
+    lower.includes("current employer") ||
+    lower.includes("current company") ||
+    lower.includes("current role") ||
+    lower.includes("presently") ||
+    lower.includes("where does he work") ||
+    lower.includes("where is he working") ||
+    lower.includes("where is he currently") ||
+    lower.includes("who does he work for") ||
+    /\b(present|now)\b/.test(lower)
+  );
+}
+
+function isCurrentRole(metadata: any) {
+  if (metadata.isCurrent === true) {
+    return true;
+  }
+
+  const duration = String(
+    metadata.duration || ""
+  ).toLowerCase();
+
+  return (
+    duration.includes("present") ||
+    duration.includes("current")
+  );
+}
+
 function recruiterIntentBoost(
   query: string,
   metadata: any
@@ -81,6 +115,16 @@ function recruiterIntentBoost(
     query.toLowerCase();
 
   let boost = 0;
+
+  // Current employer / where is he working now
+  if (isCurrentEmployerQuery(query)) {
+    if (isCurrentRole(metadata)) {
+      boost += 1.2;
+    } else if (metadata.company) {
+      // Strongly demote past employers for current-role questions
+      boost -= 0.8;
+    }
+  }
 
   // Enterprise questions
   if (
@@ -172,6 +216,8 @@ export async function retrieveRelevantKnowledge(
         ${item.metadata.summary || ""}
         ${item.metadata.company || ""}
         ${item.metadata.role || ""}
+        ${item.metadata.duration || ""}
+        ${item.metadata.isCurrent ? "currently working current employer present role now" : "previous former past employer"}
         ${(item.metadata.capabilities || []).join(
           " "
         )}
@@ -184,6 +230,7 @@ export async function retrieveRelevantKnowledge(
         ${(item.metadata.businessImpact || []).join(
           " "
         )}
+        ${item.metadata.embeddingText || ""}
       `;
 
       const keywordBoost =

@@ -74,7 +74,7 @@ export const ExperienceComp = () => {
             "Played a key role in Agile project management, actively engaging with clients to gather feedback, prioritize tasks, and ensure timely delivery of solutions.",
             "Conducted regular check-ins and follow-ups with clients to address any issues or concerns, maintaining high levels of customer satisfaction and loyalty"
           ]}
-          period={"Nov 2022 - Oct 2024"}
+          period={"Nov 2022 - Aug 2024"}
           position={"Software Developer"}
           logo={"/company/networcx_logo.jpeg"}
         />

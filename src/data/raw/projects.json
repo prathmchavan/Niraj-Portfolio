@@ -1,5 +1,73 @@
 [
   {
+    "id": "ai-recruiter-assistant-rag",
+    "type": "project",
+    "title": "AI Recruiter Assistant (RAG-based)",
+    "summary": "Built an evidence-grounded recruiter assistant using Next.js, TypeScript, semantic retrieval, and LLM APIs. Implemented hybrid retrieval and prompt engineering to provide recruiter-focused answers while minimizing unsupported responses.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "RAG",
+      "LLM APIs",
+      "Semantic Search",
+      "Prompt Engineering"
+    ],
+    "capabilities": [
+      "retrieval-augmented generation",
+      "prompt engineering",
+      "semantic search",
+      "LLM integration",
+      "hybrid retrieval",
+      "AI application engineering"
+    ],
+    "domains": [
+      "AI engineering",
+      "recruiter tooling",
+      "knowledge retrieval"
+    ],
+    "businessImpact": [
+      "Enabled evidence-grounded answers about professional experience",
+      "Reduced unsupported or hallucinated responses through retrieval grounding"
+    ],
+    "technicalChallenges": [
+      "Designing hybrid retrieval for accurate recruiter-focused answers",
+      "Engineering prompts that stay grounded in retrieved evidence"
+    ],
+    "roleAlignment": {
+      "startup": [
+        "ownership",
+        "product thinking",
+        "fast execution"
+      ],
+      "faang": [
+        "systems thinking",
+        "retrieval architecture"
+      ],
+      "solutions": [
+        "stakeholder-facing tooling",
+        "clear communication"
+      ],
+      "ai": [
+        "RAG",
+        "LLM integration",
+        "prompt engineering",
+        "semantic search"
+      ],
+      "fullstack": [
+        "Next.js",
+        "TypeScript",
+        "API orchestration"
+      ]
+    },
+    "links": {
+      "github": "",
+      "live": "/ai-candidate-assistant",
+      "reference": ""
+    },
+    "evidenceStrength": "high",
+    "embeddingText": "Built an AI Recruiter Assistant using Retrieval-Augmented Generation RAG Next.js TypeScript semantic retrieval hybrid retrieval prompt engineering and LLM APIs for evidence-grounded recruiter answers."
+  },
+  {
     "id": "chrome-extension-internal-tool",
     "type": "project",
     "title": "Internal Workflow Automation Chrome Extension",

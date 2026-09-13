@@ -1,55 +1,90 @@
 [
   {
-    "id": "onit-solution-engineering",
+    "id": "career-path-overview",
+    "type": "experience",
+    "title": "Career Path Overview - Currently at Onit",
     "company": "Onit",
     "role": "Solution Engineer-II",
-    "duration": "Current",
-    "summary": "Worked on enterprise SaaS solutions, workflow automation, internal tooling, frontend engineering, and operational productivity improvements within legal-tech environments.",
+    "duration": "Current employer",
+    "isCurrent": true,
+    "careerOrder": 99,
+    "summary": "Niraj's career path is iAastha Technologies (Junior Developer, Dec 2021 - Oct 2022), then Networcx (Software Developer, Nov 2022 - Aug 2024), then Onit (Solution Engineer / Solution Engineer-II, Aug 2024 - Present). He is currently working at Onit as Solution Engineer-II. iAastha and Networcx are previous employers only.",
+    "technologies": [],
+    "capabilities": [
+      "career progression",
+      "solution engineering",
+      "full stack engineering"
+    ],
+    "domains": [
+      "enterprise SaaS",
+      "career timeline"
+    ],
+    "businessImpact": [],
+    "strengthSignals": [
+      "career growth",
+      "current employer clarity"
+    ],
+    "embeddingText": "Where is Niraj currently working? He currently works at Onit as Solution Engineer-II. Career order: first iAastha Technologies Junior Developer, then Networcx Software Developer, now currently employed at Onit. Previous employers are iAastha and Networcx. Current company is Onit. Present role is Solution Engineer-II at Onit."
+  },
+  {
+    "id": "onit-solution-engineering",
+    "type": "experience",
+    "title": "Current Role - Onit Solution Engineer-II",
+    "company": "Onit",
+    "role": "Solution Engineer-II",
+    "duration": "Aug 2024 - Present",
+    "isCurrent": true,
+    "careerOrder": 3,
+    "summary": "CURRENT employer. Niraj currently works at Onit as Solution Engineer-II (promoted Dec 2025). Acts as a technical solutions advisor for enterprise and mid-market clients, owning end-to-end solution delivery from discovery through implementation and optimization. Partnered with customers including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
     "responsibilities": [
-      "Built workflow automation tooling",
-      "Improved operational efficiency for support teams",
-      "Developed frontend engineering solutions using Angular and TypeScript",
-      "Worked on enterprise SaaS workflows and integrations",
-      "Collaborated cross-functionally with engineering and support teams",
-      "Implemented internal productivity improvements"
+      "Translate business requirements into scalable solution designs",
+      "Own end-to-end solution delivery (discovery → implementation → optimization)",
+      "Drive cross-functional alignment across product, engineering, and business teams",
+      "Serve as primary technical owner for complex customer workflow and integration issues",
+      "Configure and extend product capabilities for diverse business use cases",
+      "Develop internal productivity tooling including Chrome extension automation"
     ],
     "technologies": [
       "Angular",
       "TypeScript",
       "JavaScript",
-      ".NET",
-      "C#",
-      "Salesforce",
-      "Chrome Extension APIs"
+      "REST APIs",
+      "System Integration",
+      "Chrome Extension APIs",
+      "SSO"
     ],
     "businessImpact": [
       "Reduced workflow login time by 93%",
+      "Saved 8+ hours per month per user",
       "Improved support turnaround efficiency",
-      "Automated repetitive operational tasks",
-      "Enabled faster troubleshooting workflows"
+      "Improved client adoption and retention"
     ],
     "strengthSignals": [
       "ownership",
       "enterprise engineering",
       "workflow optimization",
       "cross-functional collaboration",
-      "problem solving",
-      "support engineering"
+      "solution design",
+      "stakeholder management"
     ],
-    "embeddingText": "Niraj worked at Onit as a Solution Engineer and Solution Engineer-II delivering enterprise SaaS solutions, workflow automation systems, frontend engineering applications, support tooling, operational productivity improvements, and cross-functional technical solutions using Angular, TypeScript, JavaScript, .NET, Salesforce, and automation engineering."
+    "embeddingText": "Niraj is currently working at Onit as Solution Engineer-II. Current employer Onit. Present role at Onit delivering enterprise SaaS solutions, workflow automation, integrations, and document automation for Lenovo, World Bank, AMD, NVIDIA, and FedEx."
   },
   {
     "id": "networcx-fullstack-engineer",
+    "type": "experience",
+    "title": "Previous Role - Networcx Software Developer",
     "company": "Networcx",
     "role": "Software Developer",
-    "duration": "Previous",
-    "summary": "Built scalable full-stack applications using .NET, Angular, REST APIs, and MSSQL with strong focus on frontend usability and enterprise integrations.",
+    "duration": "Nov 2022 - Aug 2024",
+    "isCurrent": false,
+    "careerOrder": 2,
+    "summary": "PREVIOUS employer. Niraj previously worked at Networcx as a Software Developer before joining Onit. Built scalable full-stack applications using .NET, Angular, REST APIs, and MSSQL. This is not his current role.",
     "responsibilities": [
-      "Developed full-stack enterprise applications",
-      "Built REST API integrations",
-      "Worked with MSSQL and Entity Framework",
-      "Implemented frontend UI systems using Angular",
-      "Maintained scalable business applications"
+      "Designed and developed scalable web applications using .NET and Angular",
+      "Built and integrated RESTful APIs across system components",
+      "Worked with Entity Framework and MS SQL for efficient data access",
+      "Crafted visually strong user interfaces for usability and engagement",
+      "Collaborated in Agile environments to deliver features from requirements"
     ],
     "technologies": [
       ".NET",
@@ -71,19 +106,22 @@
       "API integrations",
       "enterprise systems"
     ],
-    "embeddingText": "Niraj worked at Networcx as a Software Developer building scalable full-stack enterprise applications using .NET, Angular, C#, REST APIs, MSSQL, and Entity Framework with strong frontend engineering and backend integration experience."
+    "embeddingText": "Niraj previously worked at Networcx as Software Developer from Nov 2022 to Aug 2024. Former employer Networcx. Past role only. Not current. Left Networcx to join Onit."
   },
   {
     "id": "iaastha-backend-engineering",
+    "type": "experience",
+    "title": "Previous Role - iAastha Technologies Junior Developer",
     "company": "iAastha Technologies",
     "role": "Junior Developer",
-    "duration": "Early Career",
-    "summary": "Worked on backend engineering systems, Python data processing pipelines, and Node.js integration services supporting scalable workflows.",
+    "duration": "Dec 2021 - Oct 2022",
+    "isCurrent": false,
+    "careerOrder": 1,
+    "summary": "PREVIOUS employer and earliest role. Niraj previously worked at iAastha Technologies as a Junior Developer from Dec 2021 to Oct 2022. He is NOT currently employed at iAastha. After iAastha he joined Networcx, then Onit where he works now.",
     "responsibilities": [
-      "Built backend processing systems",
-      "Worked on API integration services",
-      "Developed Python-based data workflows",
-      "Supported scalable backend operations"
+      "Built data processing pipelines in Python for large datasets",
+      "Developed API services using Node.js for system integrations",
+      "Supported scalable backend operations and data exchange"
     ],
     "technologies": [
       "Python",
@@ -101,6 +139,6 @@
       "system integration",
       "engineering foundations"
     ],
-    "embeddingText": "Niraj worked at iAastha Technologies building backend engineering systems, Python data processing pipelines, API services, and Node.js integrations supporting scalable workflows and backend operational systems."
+    "embeddingText": "Niraj previously worked at iAastha Technologies as Junior Developer from Dec 2021 to Oct 2022. Former early-career employer only. Not current employer. Current employer is Onit, not iAastha."
   }
 ]

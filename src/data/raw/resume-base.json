@@ -1,29 +1,29 @@
 {
   "identity": {
     "name": "Niraj Chavan",
-    "primaryTitle": "AI-enabled Solutions Engineer with Full-Stack capabilities",
-    "summary": "Technically versatile engineer with experience across workflow automation, enterprise support tooling, frontend development, customer-facing technical collaboration, and AI productivity initiatives. Strong focus on operational efficiency, problem solving, implementation ownership, and practical engineering solutions.",
-    "yearsExperience": "5+"
+    "primaryTitle": "Senior Solutions Engineer | Workflow Automation | AI Solutions Builder",
+    "summary": "Senior Solutions Engineer with 5 years of experience delivering enterprise SaaS implementations, workflow automation and customer-facing technical solutions. Experienced in partnering with global organizations like Lenovo, World Bank, AMD, NVIDIA, and Kia to design and optimize business-critical workflows, integrations, and document automation. Complemented by hands-on AI engineering through Retrieval-Augmented Generation (RAG) applications and internal productivity tooling.",
+    "yearsExperience": "5"
   },
 
   "coreStrengths": [
     "Workflow Automation",
-    "Solutions Engineering",
+    "Solution Design",
+    "Enterprise SaaS Implementations",
+    "System Integration",
+    "AI & RAG Solutions",
+    "Stakeholder Management",
     "Full-Stack Development",
-    "AI Productivity",
     "Operational Efficiency",
-    "Frontend Engineering",
-    "Technical Communication",
-    "Problem Solving",
-    "System Integrations",
-    "Support Optimization"
+    "Client Solutions",
+    "Technical Communication"
   ],
 
   "roles": [
-    "Solutions Engineer",
+    "Senior Solutions Engineer",
+    "Solution Engineer",
     "Full-Stack Developer",
-    "Technical Support Engineer",
-    "Frontend Engineer"
+    "AI Solutions Builder"
   ],
 
   "technologies": [
@@ -32,33 +32,37 @@
     "Angular",
     ".NET",
     "C#",
-    "ASP.NET Core",
-    "Entity Framework Core",
+    "Python",
+    "REST APIs",
+    "GraphQL",
+    "MSSQL",
+    "Entity Framework",
+    "AWS",
+    "Azure DevOps",
     "Chrome Extension APIs",
-    "Salesforce",
-    "Git",
-    "REST APIs"
+    "RAG",
+    "LLM Integration"
   ],
 
   "domains": [
     "Enterprise SaaS",
-    "Developer Productivity",
-    "Internal Tooling",
     "Workflow Automation",
-    "Frontend Applications",
-    "Support Engineering"
+    "Document Automation",
+    "System Integrations",
+    "AI Engineering",
+    "Client Solutioning"
   ],
 
   "capabilities": [
+    "solution design",
+    "requirement discovery",
     "workflow optimization",
-    "automation engineering",
-    "frontend architecture",
-    "technical troubleshooting",
-    "customer-facing communication",
-    "developer productivity",
     "system integrations",
-    "problem solving",
-    "documentation",
-    "cross-functional collaboration"
+    "stakeholder management",
+    "pre-sales / post-sales support",
+    "RAG applications",
+    "prompt engineering",
+    "cross-functional collaboration",
+    "operational efficiency"
   ]
 }

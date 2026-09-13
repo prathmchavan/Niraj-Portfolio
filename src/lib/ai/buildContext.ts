@@ -30,6 +30,15 @@ ${item.type}
 TITLE:
 ${item.metadata.title}
 
+COMPANY:
+${item.metadata.company || "N/A"}
+
+DURATION:
+${item.metadata.duration || "N/A"}
+
+CURRENT ROLE:
+${item.metadata.isCurrent === true || String(item.metadata.duration || "").toLowerCase().includes("present") || String(item.metadata.duration || "").toLowerCase().includes("current") ? "YES - this is a current role" : "NO - previous role only"}
+
 SUMMARY:
 ${item.metadata.summary}
 

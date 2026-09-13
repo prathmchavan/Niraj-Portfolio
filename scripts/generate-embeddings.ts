@@ -104,6 +104,18 @@ console.log(
 TITLE:
 ${normalized.title || ""}
 
+COMPANY:
+${normalized.company || ""}
+
+ROLE:
+${normalized.role || ""}
+
+DURATION:
+${normalized.duration || ""}
+
+CURRENT ROLE:
+${normalized.isCurrent === true ? "YES - currently working here" : "NO - previous role"}
+
 SUMMARY:
 ${normalized.summary || ""}
 
