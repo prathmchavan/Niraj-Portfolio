@@ -80,12 +80,14 @@
       "name": "AI Engineering",
       "years": 2,
       "confidence": "medium",
-      "lastUsed": "2025",
+      "lastUsed": "2026",
       "areas": [
+        "Retrieval-Augmented Generation (RAG)",
+        "prompt engineering",
+        "semantic search",
+        "LLM integration",
         "AI productivity",
-        "LLM experimentation",
-        "workflow optimization",
-        "AI-assisted engineering"
+        "workflow optimization"
       ]
     },
     {
