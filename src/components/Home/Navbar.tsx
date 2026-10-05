@@ -1,8 +1,9 @@
 "use client";
 
-import { Box, Card, IconButton, Tooltip, Typography } from "@mui/material";
+import { Box, Card, IconButton, Tooltip, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Education,
   Experience,
@@ -15,6 +16,9 @@ import {
 
 export const Navbar = () => {
   const [trayIn, setTrayIn] = useState(false);
+  const navRef = useRef<HTMLDivElement | null>(null);
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
@@ -23,20 +27,158 @@ export const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    if (!trayIn) return;
+
+    const onPointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (navRef.current && target && !navRef.current.contains(target)) {
+        setTrayIn(false);
+      }
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setTrayIn(false);
+      }
+    };
+
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [trayIn]);
+
+  const navItems = [
+    {
+      title: "Profile",
+      icon: <Person />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("profile");
+      },
+    },
+    {
+      title: "Experience",
+      icon: <Experience />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("experience");
+      },
+    },
+    {
+      title: "Education",
+      icon: <Education />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("education");
+      },
+    },
+    {
+      title: "Skills",
+      icon: <Tools />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("skills");
+      },
+    },
+    {
+      title: "Experiments",
+      icon: <Experiments />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("experiments");
+      },
+    },
+    {
+      title: "Resume",
+      icon: <Resume />,
+      onClick: () => {
+        setTrayIn(false);
+        handleScroll("resume");
+      },
+    },
+  ];
+
+  const trayContent = (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        position: ["fixed", "static"],
+        top: ["64px", "auto"],
+        right: ["12px", "auto"],
+        left: "auto",
+        transform: "none",
+        backgroundColor: ["rgba(0,0,0,0.96)", "transparent"],
+        borderRadius: ["16px", 0],
+        border: ["1px solid rgba(255,255,255,0.1)", "none"],
+        p: [1, 0],
+        zIndex: 1400,
+        minWidth: ["56px", "auto"],
+        boxShadow: ["0 12px 40px rgba(0,0,0,0.55)", "none"],
+      }}
+    >
+      {navItems.map((item) => (
+        <Tooltip key={item.title} title={item.title} arrow placement="left">
+          <IconButton
+            sx={{
+              color: "white",
+              ":hover": {
+                backgroundColor: "white",
+                color: "black",
+              },
+            }}
+            onClick={item.onClick}
+          >
+            {item.icon}
+          </IconButton>
+        </Tooltip>
+      ))}
+
+      <Tooltip title="Ask Niraj" arrow placement="left">
+        <Link href="/ai-candidate-assistant">
+          <IconButton
+            sx={{
+              color: "#7c3aed",
+              border: "1px solid rgba(255,255,255,0.08)",
+              padding: "6px 10px",
+              ":hover": { backgroundColor: "white", color: "black" },
+            }}
+            onClick={() => setTrayIn(false)}
+          >
+            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>Ask</Typography>
+          </IconButton>
+        </Link>
+      </Tooltip>
+    </Box>
+  );
+
   return (
     <Box
+      ref={navRef}
       sx={{
         position: "fixed",
         top: 0,
         left: 0,
-        height: ["10vh", "100vh"],
-        display: ["flex"],
+        zIndex: 1300,
+        height: ["56px", "100vh"],
+        display: "flex",
         width: ["100%", "auto"],
+        maxWidth: ["100vw", "none"],
         flexDirection: ["row", "column"],
-        alignItems: "flex-start",
+        alignItems: ["center", "flex-start"],
         justifyContent: "space-between",
-        backdropFilter: "blur(5px)",
+        backgroundColor: ["rgba(0,0,0,0.92)", "transparent"],
+        backdropFilter: "blur(8px)",
         px: "12px",
+        boxSizing: "border-box",
       }}
     >
       <Typography
@@ -57,172 +199,75 @@ export const Navbar = () => {
             filter: "none",
           },
           cursor: "pointer",
+          flexShrink: 0,
         }}
       >
         {"</>"}
       </Typography>
+
       <Card
         sx={{
           position: "relative",
           height: ["auto", "100%"],
-          display: ["flex", "flex"],
+          display: "flex",
           flexDirection: ["row", "column"],
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "none",
           backgroundColor: "black",
-          px: [1, 0],
-          py: [0.5, 0],
+          px: [0.5, 0],
+          py: 0,
+          flexShrink: 0,
+          overflow: "visible",
         }}
       >
-        {trayIn ? (
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-              position: ["absolute", "static"],
-              top: ["100%", "auto"],
-              right: 0,
-              mt: [1, 0],
-              backgroundColor: "rgba(0,0,0,0.95)",
-              borderRadius: "16px",
-              p: [1, 0],
-              zIndex: 30,
-            }}
-          >
-            <Tooltip title="Profile" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("profile");
-                }}
-              >
-                <Person />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="AI" arrow={true} placement="left">
-              <Link href="/ai-candidate-assistant">
-                <IconButton
-                  sx={{
-                    color: "#7c3aed",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    padding: "6px 10px",
-                    ":hover": { backgroundColor: "white", color: "black" },
-                  }}
-                  onClick={() => setTrayIn(false)}
-                >
-                  <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
-                </IconButton>
-              </Link>
-            </Tooltip>
-            <Tooltip title="Experience" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("experience");
-                }}
-              >
-                <Experience />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Education" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("education");
-                }}
-              >
-                <Education />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Skills" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("skills");
-                }}
-              >
-                <Tools />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Experiments" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("experiments");
-                }}
-              >
-                <Experiments />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Resume" arrow={true} placement="left">
-              <IconButton
-                sx={{
-                  color: "white",
-                  ":hover": {
-                    backgroundColor: "white",
-                    color: "black",
-                  },
-                }}
-                onClick={() => {
-                  setTrayIn(false);
-                  handleScroll("resume");
-                }}
-              >
-                <Resume />
-              </IconButton>
-            </Tooltip>
-          </Box>
-        ) : (
-          <IconButton
-            onMouseEnter={() => setTrayIn(true)}
-            onClick={() => setTrayIn((open) => !open)}
-            sx={{
-              color: "white",
-              padding: "14px",
-            }}
-          >
-            <Hamburger width={26} height={26} />
-          </IconButton>
+        {/* Mobile: hamburger always stays; tray overlays below */}
+        {!isDesktop && (
+          <>
+            <IconButton
+              onClick={() => setTrayIn((open) => !open)}
+              aria-label={trayIn ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={trayIn}
+              sx={{
+                color: "white",
+                padding: "14px",
+              }}
+            >
+              <Hamburger width={26} height={26} />
+            </IconButton>
+            {trayIn && trayContent}
+          </>
+        )}
+
+        {/* Desktop: hover opens tray; hamburger stays so click can toggle closed */}
+        {isDesktop && (
+          <>
+            <IconButton
+              onMouseEnter={() => setTrayIn(true)}
+              onClick={() => setTrayIn((open) => !open)}
+              aria-label={trayIn ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={trayIn}
+              sx={{
+                color: "white",
+                padding: "14px",
+              }}
+            >
+              <Hamburger width={26} height={26} />
+            </IconButton>
+            {trayIn && trayContent}
+          </>
         )}
       </Card>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, ml: 2 }}>
+
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 1,
+          ml: [0, 2],
+          flexShrink: 0,
+        }}
+      >
         <Link href="/ai-candidate-assistant">
           <IconButton
             sx={{
@@ -230,14 +275,15 @@ export const Navbar = () => {
               border: "1px solid rgba(255,255,255,0.08)",
               borderRadius: 1,
               padding: "6px 10px",
-              ':hover': { backgroundColor: 'white', color: 'black' },
+              ":hover": { backgroundColor: "white", color: "black" },
             }}
           >
-            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>AI</Typography>
+            <Typography sx={{ fontSize: 13, fontWeight: 700 }}>Ask</Typography>
           </IconButton>
         </Link>
       </Box>
-      <Box sx={{ mt: "45px" }}></Box>
+
+      <Box sx={{ display: ["none", "block"], mt: "45px" }} />
     </Box>
   );
 };

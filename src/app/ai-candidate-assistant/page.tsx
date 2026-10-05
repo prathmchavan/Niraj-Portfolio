@@ -11,12 +11,12 @@ import TypingIndicator from "@/components/ai/TypingIndicator";
 import { ChatMessage } from "@/types/chat";
 
 const loadingMessages = [
-  "Analyzing recruiter intent...",
-  "Reviewing technical experience...",
-  "Evaluating startup alignment...",
+  "Reviewing the question...",
+  "Looking through technical experience...",
+  "Checking startup and project fit...",
   "Matching skills with evidence...",
-  "Building confidence analysis...",
-  "Generating recruiter summary...",
+  "Putting the answer together...",
+  "Generating a clear summary...",
 ];
 
 export default function AICandidateAssistantPage() {
@@ -29,7 +29,7 @@ export default function AICandidateAssistantPage() {
     {
       role: "assistant",
       content:
-        "Hello — I’m Niraj’s AI Candidate Assistant. You can ask about technical skills, startup fit, fullstack engineering experience, AI productivity mindset, or paste a job description for analysis.",
+        "Hello — I’m Ask Niraj. You can ask about technical skills, startup fit, fullstack engineering experience, AI productivity mindset, or paste a job description for analysis.",
     },
   ]);
   const [evidence, setEvidence] = useState<any[]>([]);
@@ -244,10 +244,10 @@ export default function AICandidateAssistantPage() {
           <Link href="/">
             <button className="ai-back-button">←See Portfolio</button>
           </Link>
-          <p className="ai-label">Candidate Assistant</p>
+          <p className="ai-label">Ask Niraj</p>
           <h1>Talk to an AI version of Niraj</h1>
           <p className="ai-subtitle">
-            Recruiters can evaluate technical fit, startup readiness, engineering mindset, and project experience conversationally.
+            Ask about my experience, skills, projects, or paste a role to see how I fit.
           </p>
           
         </div>
@@ -292,7 +292,7 @@ export default function AICandidateAssistantPage() {
             }}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Ask recruiter-style questions or paste a job description..."
+            placeholder="Ask about my experience or paste a job description..."
           />
           <button onClick={handleSend} disabled={loading}>
             {loading ? "Thinking..." : "Send"}

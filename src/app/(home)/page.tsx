@@ -10,7 +10,7 @@ import {
 } from "@/components";
 import Link from "next/link";
 import { Box as MuiBox } from "@mui/material";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,31 +20,41 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         width: "100%",
-        overflowX: "hidden",
+        maxWidth: "100vw",
         minHeight: "100vh",
         backgroundColor: "black",
         color: "white",
       }}
     >
       <Navbar />
-      <Main />
-      <AboutMe />
       <Box
         sx={{
+          width: "100%",
+          maxWidth: "100%",
+          overflowX: "hidden",
           display: "flex",
-          // Force a single-column layout so Experience appears above Education
           flexDirection: "column",
-          gap: 4,
         }}
       >
-        <ExperienceComp />
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <EducationComp />
-          <Skills />
+        <Main />
+        <AboutMe />
+        <Box
+          sx={{
+            display: "flex",
+            // Force a single-column layout so Experience appears above Education
+            flexDirection: "column",
+            gap: 4,
+          }}
+        >
+          <ExperienceComp />
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+            <EducationComp />
+            <Skills />
+          </Box>
         </Box>
+        <ExperimentsComp />
+        <ResumeComp />
       </Box>
-      <ExperimentsComp />
-      <ResumeComp />
       <Box
         sx={{
           position: "fixed",
@@ -71,9 +81,9 @@ export default function Home() {
           />
         </Box>
       </Box>
-      <MuiBox sx={{ position: 'fixed', right: [12, 20], bottom: [8, 16], zIndex: 40 }}>
+      <MuiBox sx={{ position: "fixed", right: [12, 20], bottom: [8, 16], zIndex: 40 }}>
         <Link href="/ai-candidate-assistant">
-          <button className="floating-ai-btn">Go to AI assistance</button>
+          <button className="floating-ai-btn">Ask Niraj</button>
         </Link>
       </MuiBox>
     </Box>
