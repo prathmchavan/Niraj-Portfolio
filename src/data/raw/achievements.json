@@ -48,8 +48,8 @@
   {
     "id": "promotion-solution-engineer-2",
     "type": "achievement",
-    "title": "Promotion to Solution Engineer II",
-    "summary": "Promoted from Solution Engineer to Solution Engineer II based on engineering contributions, workflow optimization work, and operational impact.",
+    "title": "Promotion to Senior Solution Engineer",
+    "summary": "Promoted from Solution Engineer to Senior Solution Engineer based on engineering contributions, workflow optimization work, and operational impact.",
     "technologies": [
       "Enterprise SaaS",
       "Workflow Automation"
@@ -82,7 +82,7 @@
     },
     "links": {},
     "evidenceStrength": "high",
-    "embeddingText": "Promoted to Solution Engineer II after demonstrating ownership, workflow optimization, engineering execution, and operational efficiency improvements."
+    "embeddingText": "Promoted to Senior Solution Engineer after demonstrating ownership, workflow optimization, engineering execution, and operational efficiency improvements."
   },
   {
     "id": "aspnetzero-featured-contribution",

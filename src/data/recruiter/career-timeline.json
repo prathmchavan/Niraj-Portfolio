@@ -4,11 +4,11 @@
     "type": "experience",
     "title": "Career Path Overview - Currently at Onit",
     "company": "Onit",
-    "role": "Solution Engineer-II",
+    "role": "Senior Solution Engineer",
     "duration": "Current employer",
     "isCurrent": true,
     "careerOrder": 99,
-    "summary": "Niraj's career path is iAastha Technologies (Junior Developer, Dec 2021 - Oct 2022), then Networcx (Software Developer, Nov 2022 - Aug 2024), then Onit (Solution Engineer / Solution Engineer-II, Aug 2024 - Present). He is currently working at Onit as Solution Engineer-II. iAastha and Networcx are previous employers only.",
+    "summary": "Niraj's career path is iAastha Technologies (Junior Developer, Dec 2021 - Oct 2022), then Networcx (Software Developer, Nov 2022 - Aug 2024), then Onit (Solution Engineer / Senior Solution Engineer, Aug 2024 - Present). He is currently working at Onit as Senior Solution Engineer. iAastha and Networcx are previous employers only.",
     "technologies": [],
     "capabilities": [
       "career progression",
@@ -24,18 +24,18 @@
       "career growth",
       "current employer clarity"
     ],
-    "embeddingText": "Where is Niraj currently working? He currently works at Onit as Solution Engineer-II. Career order: first iAastha Technologies Junior Developer, then Networcx Software Developer, now currently employed at Onit. Previous employers are iAastha and Networcx. Current company is Onit. Present role is Solution Engineer-II at Onit."
+    "embeddingText": "Where is Niraj currently working? He currently works at Onit as Senior Solution Engineer. Career order: first iAastha Technologies Junior Developer, then Networcx Software Developer, now currently employed at Onit. Previous employers are iAastha and Networcx. Current company is Onit. Present role is Senior Solution Engineer at Onit."
   },
   {
     "id": "onit-solution-engineering",
     "type": "experience",
-    "title": "Current Role - Onit Solution Engineer-II",
+    "title": "Current Role - Onit Senior Solution Engineer",
     "company": "Onit",
-    "role": "Solution Engineer-II",
+    "role": "Senior Solution Engineer",
     "duration": "Aug 2024 - Present",
     "isCurrent": true,
     "careerOrder": 3,
-    "summary": "CURRENT employer. Niraj currently works at Onit as Solution Engineer-II (promoted Dec 2025). Acts as a technical solutions advisor for enterprise and mid-market clients, owning end-to-end solution delivery from discovery through implementation and optimization. Partnered with customers including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
+    "summary": "CURRENT employer. Niraj currently works at Onit as Senior Solution Engineer (promoted Dec 2025). Acts as a technical solutions advisor for enterprise and mid-market clients, owning end-to-end solution delivery from discovery through implementation and optimization. Partnered with customers including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
     "responsibilities": [
       "Translate business requirements into scalable solution designs",
       "Own end-to-end solution delivery (discovery → implementation → optimization)",
@@ -67,7 +67,7 @@
       "solution design",
       "stakeholder management"
     ],
-    "embeddingText": "Niraj is currently working at Onit as Solution Engineer-II. Current employer Onit. Present role at Onit delivering enterprise SaaS solutions, workflow automation, integrations, and document automation for Lenovo, World Bank, AMD, NVIDIA, and FedEx."
+    "embeddingText": "Niraj is currently working at Onit as Senior Solution Engineer. Current employer Onit. Present role at Onit delivering enterprise SaaS solutions, workflow automation, integrations, and document automation for Lenovo, World Bank, AMD, NVIDIA, and FedEx."
   },
   {
     "id": "networcx-fullstack-engineer",

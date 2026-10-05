@@ -2,12 +2,12 @@
   {
     "id": "onit-solution-engineer",
     "type": "experience",
-    "title": "Onit - Solution Engineer / Solution Engineer II",
+    "title": "Onit - Solution Engineer / Senior Solution Engineer",
     "company": "Onit",
     "duration": "Aug 2024 - Present",
     "isCurrent": true,
     "careerOrder": 3,
-    "summary": "CURRENT employer. Niraj currently works at Onit as Solution Engineer-II (promoted Dec 2025), delivering enterprise SaaS implementations, workflow automation, integrations, and document-centric solutions. Partnered with enterprise customers including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
+    "summary": "CURRENT employer. Niraj currently works at Onit as Senior Solution Engineer (promoted Dec 2025), delivering enterprise SaaS implementations, workflow automation, integrations, and document-centric solutions. Partnered with enterprise customers including Lenovo, World Bank, AMD, NVIDIA, and FedEx.",
     "technologies": [
       "Angular",
       "TypeScript",
@@ -79,7 +79,7 @@
       "linkedin": "https://www.onit.com/"
     },
     "evidenceStrength": "high",
-    "embeddingText": "Niraj is currently working at Onit. Current employer is Onit. Present role is Solution Engineer-II at Onit delivering enterprise SaaS implementations, workflow automation, integrations, and document-centric solutions for Lenovo, World Bank, AMD, NVIDIA, and FedEx. Built a Chrome extension automating OTT authentication reducing login time by 93 percent."
+    "embeddingText": "Niraj is currently working at Onit. Current employer is Onit. Present role is Senior Solution Engineer at Onit delivering enterprise SaaS implementations, workflow automation, integrations, and document-centric solutions for Lenovo, World Bank, AMD, NVIDIA, and FedEx. Built a Chrome extension automating OTT authentication reducing login time by 93 percent."
   },
   {
     "id": "networcx-software-developer",

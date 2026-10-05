@@ -44,7 +44,7 @@ export const ExperienceComp = () => {
                 "Identify operational bottlenecks and translate them into scalable internal tooling, demonstrating strong architectural thinking beyond core responsibilities."
               ]} 
          period={"Dec 2025 - Current"}
-          position={"Solution Engineer II"}
+          position={"Senior Solution Engineer"}
           logo={"/company/onit_logo.jpeg"}
         />
 

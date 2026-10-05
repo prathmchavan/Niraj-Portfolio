@@ -35,7 +35,8 @@ export const Main = () => {
         <Typography
           sx={{
             fontFamily: "Sacramento",
-            fontSize: ["4rem", "6rem", "8rem"],
+            fontSize: "clamp(2.4rem, 12vw, 8rem)",
+            lineHeight: 1.15,
             textAlign: "center",
             fontWeight: 700,
             backgroundImage: "url('/home/three.jpg')",
@@ -47,7 +48,9 @@ export const Main = () => {
             WebkitTextFillColor: "transparent",
             width: "100%",
             maxWidth: "100%",
+            overflowWrap: "anywhere",
             wordBreak: "break-word",
+            px: [0.5, 0],
           }}
         >
           Niraj Chavan
@@ -99,11 +102,11 @@ export const Main = () => {
                 py: 1.5,
               }}
             >
-              Launch AI Recruiter Assistant
+              Ask About Niraj
             </Button>
           </Link>
           <Typography sx={{ fontSize: 16, textAlign: "center", maxWidth: ["90vw", 820] }}>
-            Interactively evaluate Niraj’s technical expertise, engineering mindset, startup fit and project experience through an AI-powered recruiter assistant.
+            Ask about my technical expertise, engineering mindset, startup fit, and project experience.
           </Typography>
         </Box>
       </Box>

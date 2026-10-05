@@ -61,43 +61,51 @@ export const ResumeComp = () => {
             For a more formal introduction, download my resume by clicking the
             button Download below or contact me for more details!
           </Typography>
-          <Box>
-          <Button
+          <Box
             sx={{
-              backgroundColor: "white",
-              color: "black",
-              textTransform: "capitalize",
-              px: "30px",
-              py: "12px",
-              ":hover": {
-                backgroundColor: "gray",
-                color:"white  "
-              }
+              display: "flex",
+              flexDirection: ["column", "row"],
+              alignItems: ["stretch", "center"],
+              gap: ["12px", "20px"],
+              width: "100%",
+              maxWidth: ["100%", "none"],
             }}
-            onClick={() => window.open("/resume/Resume.pdf", "_blank")}
           >
-            Download Resume
-          </Button>
+            <Button
+              sx={{
+                backgroundColor: "white",
+                color: "black",
+                textTransform: "capitalize",
+                px: "30px",
+                py: "12px",
+                width: ["100%", "auto"],
+                ":hover": {
+                  backgroundColor: "gray",
+                  color: "white",
+                },
+              }}
+              onClick={() => window.open("/resume/Resume.pdf", "_blank")}
+            >
+              Download Resume
+            </Button>
 
-          <Button
-            sx={{
-              backgroundColor: "white",
-              marginLeft: "20px",
-              color: "black",
-              textTransform: "capitalize",
-              px: "30px",
-              py: "12px",
-              ":hover": {
-                backgroundColor: "gray",
-                color:"white  "
-              }
-            }}
-            
-            href="mailto:nirajchavan2511@gmail.com?subject=Contacted from Portfolio&body=Hi Niraj,"
-          >
-            Contact Me
-          </Button>
-          
+            <Button
+              sx={{
+                backgroundColor: "white",
+                color: "black",
+                textTransform: "capitalize",
+                px: "30px",
+                py: "12px",
+                width: ["100%", "auto"],
+                ":hover": {
+                  backgroundColor: "gray",
+                  color: "white",
+                },
+              }}
+              href="mailto:nirajchavan2511@gmail.com?subject=Contacted from Portfolio&body=Hi Niraj,"
+            >
+              Contact Me
+            </Button>
           </Box>
           <Box
           sx={{
